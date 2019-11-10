@@ -1,6 +1,6 @@
 ---
 title: "Machine Learning Project: Nutrition"
-data: 2019-10-10
+date: 2019-11-10
 tags: [machine learning, data science, neural network]
 header:
   #image: "images"
