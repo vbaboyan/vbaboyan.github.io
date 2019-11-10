@@ -131,7 +131,7 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
-    -label: "LinkedIN"
+    -label: "linkedin"
       icon: "fab fa-fw fa-linkedin-square"
       url: "linkedin.com/in/vgbaboyan/"
 
