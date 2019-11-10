@@ -3,7 +3,7 @@ title: "Machine Learning Project: Nutrition"
 date: 2019-11-10
 tags: [machine learning, data science, neural network]
 header:
-  #image: "images"
+  image: "/assets/images/Header.png"
 excerpt: "Machine Learning, Perceptron, Data Science"
 ---
 
