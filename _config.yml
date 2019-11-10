@@ -132,7 +132,7 @@ author:
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
     -label: "LinkedIN"
-      icon: "fab fa-linkedin"
+      icon: "fa fa-linkedin-square"
       url: "linkedin.com/in/vgbaboyan/"
 
 # Site Footer
