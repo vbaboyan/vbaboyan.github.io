@@ -289,6 +289,8 @@ defaults:
       comments: # true
       share: true
       related: true
+      header:
+        image: "/assets/images/Header.png"
 
   # _posts
   - scope:
@@ -297,3 +299,5 @@ defaults:
     values:
       layout: single
       author_profile: true
+      header:
+        image: "/assets/images/Header.png"
