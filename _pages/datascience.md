@@ -4,5 +4,5 @@ permalink: /datascience.md
 title: "Data Science Posts by Tags"
 author_profile: true
 header:
-  image: "/images/Header.png"
+  image: "/assets/images/Header.png"
 ---
