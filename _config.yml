@@ -124,10 +124,10 @@ author:
       url: "https://www.linkedin.com/in/vgbaboyan/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "vbaboyan"
+      #url: "vbaboyan"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/brodmanns45"
+      #url: "https://instagram.com/brodmanns45"
 
 # Site Footer
 footer:
