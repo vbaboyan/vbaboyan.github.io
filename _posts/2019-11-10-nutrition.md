@@ -5,6 +5,8 @@ tags: [machine learning, data science, neural network]
 header:
   image: "/assets/images/Header.png"
 excerpt: "Machine Learning, Perceptron, Data Science"
+author_profile: true
+
 ---
 
 # H1 Heading
