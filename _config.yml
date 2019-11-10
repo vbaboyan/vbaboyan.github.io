@@ -127,13 +127,10 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-       url: "https://github.com/vbaboyan"
+       url: "vbaboyan"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
-    - label: "LinkedIN"
-      icon: "fab fa-fw fa-linkedin"
-       url: "https://www.linkedin.com/in/vgbaboyan/"
 
 # Site Footer
 footer:
