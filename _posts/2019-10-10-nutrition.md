@@ -50,4 +50,9 @@ head(df)
 Here's come inline code `x+y`.
 
 Here's an image:
-<img src="{{ site.url }}{{site.baseurl }}/assets/images/Header.png" alt="">
+<img src="{{ site.url }}{{site.baseurl }}/assets/images/Harden.png" alt="James Harden">
+
+Here's some math:
+$$z=x+y$$
+
+You can also put it inline $$z=x+y$$
