@@ -127,8 +127,8 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/vbaboyan"
-    - label: "Instagram"
+      url: "vbaboyan"
+    - label: "Instagram"s
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/brodmanns45"
 
