@@ -10,3 +10,4 @@ Professionally, I anticipate making the transition from academia into industry i
 Thanks for visiting my page. I'd happily get in contact with you through the links provided.
 
 -Vatché
+*"Let food by thy medicine, and medicine by thy food" -Hippocrates*
