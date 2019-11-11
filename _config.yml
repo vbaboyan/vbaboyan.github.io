@@ -128,6 +128,9 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       #url: "https://instagram.com/brodmanns45"
+    - label: "soundcloud"
+      icon: "fab fa-fw fa-soundcloud"
+      url: "https://soundcloud.com/brodmanns45"
 
 # Site Footer
 footer:
