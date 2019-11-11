@@ -1,8 +1,8 @@
 ---
-title: "Machine Learning Project: Nutrition"
+title: "Potassium and Adrenal Fatigue"
 date: 2019-11-10
-tags: [machine learning, data science, neural network]
-excerpt: "Machine Learning, Perceptron, Data Science"
+tags: [data science, nutrition, data visualization]
+excerpt: "A data science approach to nutrition"
 ---
 
 # H1 Heading
