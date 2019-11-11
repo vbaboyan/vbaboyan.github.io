@@ -9,6 +9,6 @@ I'm a graduate student currently pursuing a research doctorate in Cognitive Neur
 
 Professionally, I anticipate making the transition from academia into industry in order to work in translational environments where efforts to treat neurological illness are the primary force guiding company operations.
 
-In my spare time, i'm most likely watching the NBA (Purple and Gold all day!), boxing, traveling, or scouring the internet for electronic music records to add to my vinyl collection. 
+In my spare time, i'm most likely watching the NBA (Purple and Gold all day!), at the gym boxing or weightlifting, traveling, or scouring the internet for electronic music records to add to my vinyl collection. 
 
 Thanks for visiting my page and feel free to get in contact with me through any of the links provided.
