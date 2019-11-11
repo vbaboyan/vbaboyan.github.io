@@ -116,10 +116,10 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: mailto:your.name@email.com
-    - label: "ResearchGate"
+    - label: "Research Gate"
       icon: "fab fa-fw fa-researchgate"
       url: "https://www.researchgate.net/profile/Vatche_Baboyan"
-    - label: "linkedin"
+    - label: "LinkedIN"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/vgbaboyan/"
     - label: "GitHub"
