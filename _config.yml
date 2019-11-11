@@ -116,10 +116,10 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: mailto:your.name@email.com
-    - label: "Research Gate"
+    - label: "ResearchGate"
       icon: "fab fa-fw fa-researchgate"
       url: "https://www.researchgate.net/profile/Vatche_Baboyan"
-    - label: "LinkedIN"
+    - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/vgbaboyan/"
     - label: "GitHub"
@@ -128,7 +128,7 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       #url: "https://instagram.com/brodmanns45"
-    - label: "soundcloud"
+    - label: "SoundCloud"
       icon: "fab fa-fw fa-soundcloud"
       url: "https://soundcloud.com/brodmanns45"
 
