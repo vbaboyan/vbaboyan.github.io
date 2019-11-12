@@ -6,4 +6,4 @@ sitemap: false
 permalink: /Under_Construction/
 ---
 
-Under Construction: Currently, preparing a blog post entitled, "Potassium and Adrenal Fatigue: A Data Science Approach to Nutrition"
+Currently preparing a blog post entitled, "Potassium and Adrenal Fatigue: A Data Science Approach to Nutrition". Please check back later.
