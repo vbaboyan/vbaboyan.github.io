@@ -5,7 +5,7 @@ main:
   - title: "Blog"
     url: /datascience/
   - title: "Resume"
-    url: {{ site.baseurl }}/pdfs/VBaboyan_Resume_OFC.pdf
+    url: /assets/pdfs/VBaboyan_Resume_OFC.pdf
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
