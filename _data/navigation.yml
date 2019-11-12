@@ -3,7 +3,8 @@ main:
   - title: "About"
     url: /about/
   - title: "Blog"
-    url: /datascience/
+    #url: /datascience/
+    url: /Under_Construction/
   - title: "Resume"
     url: /assets/pdfs/VBaboyan_Resume_OFC.pdf
   # - title: "About"
