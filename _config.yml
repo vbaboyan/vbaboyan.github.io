@@ -109,7 +109,7 @@ analytics:
 author:
   name             : "Vatché G. Baboyan"
   avatar           : "/assets/images/Avatar.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Data Science Portfolio"
+  bio              : "Blog & Portfolio"
   location         : "Los Angeles, CA"
   email            : vatchebaboyan@gmail.com
   links:
