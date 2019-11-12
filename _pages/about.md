@@ -9,7 +9,7 @@ I'm a graduate student currently pursuing a research doctorate in Cognitive Neur
 
 Professionally, I anticipate making the transition from academia into industry in order to work in translational environments where efforts to treat neurological illness are the primary force guiding company operations.
 
-In my spare time, you can spot me watching NBA games, at the gym boxing or weightlifting, traveling, resisting black licorice temptations, or scouring the internet for electronic music records to add to my vinyl collection. The genres I enjoy most are electronic world music and minimal/dub-techno. My favorite producers are Nicolas Jaar and David August. 
+In my spare time, you can spot me watching NBA games, at the gym boxing or weightlifting, traveling, resisting black licorice temptations, or scouring the internet for electronic music records to add to my vinyl collection. The genres I enjoy most are electronic world music and minimal/dub-techno. My favorite producers are Nicolas Jaar (CL/US), David August (DE), and Viken Arman (AM/FR).
 
 >"“And those who were seen dancing were thought to be insane by those who could not hear the music.” - Friedrich Nietzsche
 
