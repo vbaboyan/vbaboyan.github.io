@@ -4,7 +4,10 @@ main:
     url: /about/
   - title: "Blog"
     #url: /datascience/
-    url: /Under_Construction/
+    url: /Under_Construction_blog/
+  - title: "Projects"
+    #url: /datascience/
+    url: /Under_Construction_projects/
   - title: "Resume"
     url: /assets/pdfs/VBaboyan_Resume_OFC.pdf
   # - title: "About"
