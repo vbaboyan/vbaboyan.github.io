@@ -2,7 +2,10 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Blog"
+  - title: "Mental-Floss"
+    #url: /datascience/
+    url: /Under_Construction_blog/
+    - title: "Body-talk"
     #url: /datascience/
     url: /Under_Construction_blog/
   - title: "Projects"
