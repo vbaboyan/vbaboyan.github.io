@@ -1,5 +1,6 @@
 ---
 layout: archive
+permalink: /blog/
 title: "Recent Blog Posts"
 ---
 
