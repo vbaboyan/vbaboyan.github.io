@@ -2,12 +2,8 @@
 main:
   - title: "About"
     url: /about/
-  - title: "MentalFloss"
-    #url: /datascience/
-    url: /Under_Construction_blog/
-    - title: "Nutrition"
-    #url: /datascience/
-    url: /Under_Construction_blog/
+  - title: "Blog"
+    url: /blog/
   - title: "Projects"
     #url: /datascience/
     url: /Under_Construction_projects/
