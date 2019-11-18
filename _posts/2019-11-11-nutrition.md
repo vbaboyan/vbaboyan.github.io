@@ -19,14 +19,13 @@ Before, diving into potassium-rich foods specifically, it's helpful to know how 
 
 <img src="{{ site.url }}{{site.baseurl }}/assets/images/figs/Corplot.png" alt="Nutrition Correlation Heatmap">
 
-The image on the left is a "heatmap" that renders the pairwise correlations in nutrition contents. Squares in dark blue represent a strong positive correlation between that specific row/column combination, and vice versa for red squares. You can see how foods that are high in potassium tend to also be high in other vital nutrients like Iron, Fiber, and Magnesium which are all vital for your body. By grouping variables that tend to have a shared presence in foods, we can visualize how certain nutrients band together. Let's take a closer look at group containing potassium. 
+The image on the left is a "heatmap" that renders the pairwise correlations between nutrition contents. The blue pixels in the image represent positive correlations for the corresponding row/column pair, and vice versa for red pixels. At a glance, you can see how foods that are high in potassium tend to also be high in other vital nutrients like Iron, Fiber, and Magnesium. By grouping variables that tend to have a shared presence in foods, we can visualize how certain nutrients band together. Let's take a closer look at group containing potassium.
 
 ## Step 1: Exploratory data analysis
 
-Here's a numbered list:
-1. Data Prep.
-2. Data viz.
-3. Hypotheses
+1. Filtering by RDA
+2. PCA based sorting and wordcloud
+3. Personal favorites
 
 
 ## Conclusions and recommendations
