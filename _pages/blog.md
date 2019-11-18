@@ -3,10 +3,10 @@ layout: archive
 permalink: /blog/
 title: "Blog Posts by Tags"
 ---
-{% for group in site.posts | group_by: "tag" | sort_by: "name" %}
-   <h2>{{ group.name }}</h2>
+{% for post in site.posts%}
+   <h2>{{ post.name }}</h2>
    <ul>
-   {% for page in group.items %}
+   {% for page in post.items %}
       <li>{{ page.title }}</li>
     {% endfor %}
   </ul>
