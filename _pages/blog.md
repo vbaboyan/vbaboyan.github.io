@@ -1,10 +1,7 @@
 ---
 layout: archive
 title: "Recent Blog Posts"
-permalinks:
-  year: '/archives/year/:year/'
-  month: '/archives/month/:year-:month/'
-  tag: '/archives/tag/:name/'
+permalinks: /blog/
 ---
 
 <ul class="posts">
