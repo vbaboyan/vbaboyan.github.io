@@ -1,0 +1,7 @@
+"x"
+"raw"
+"cooked"
+"salt"
+"boiled"
+"without"
+"added"
