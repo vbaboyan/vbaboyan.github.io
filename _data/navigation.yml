@@ -5,7 +5,6 @@ main:
   - title: "Blog"
     url: /blog/
   - title: "Projects"
-    #url: /datascience/
     url: /Under_Construction_projects/
   - title: "Resume"
     url: /assets/pdfs/VBaboyan_Resume_OFC.pdf
