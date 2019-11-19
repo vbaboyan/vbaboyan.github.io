@@ -24,7 +24,7 @@ The symmetric image on the left is a "heatmap" that renders the pairwise correla
 
 
 ## Data Filtering
-Next, I wanted to scale the nutrient contents by their recommended daily intake (RDI) values. As mentioned before, the RDI for potassium is 4700mg so let's take a look at some common foods that fall in the upper 90th percentile of RDI values for potassium - which tends to be in the 10-20% RDI range. Personally, i'm interested in foods that are low in sugar and animal proteins. That said, three of the predominant food groups that match these interests are (1) nuts and nut products, (2) Fruits and Fruit Juices, (3) and Vegetable and Vegetable products.
+Next, I wanted to scale the nutrient contents by their recommended daily intake (RDI) values. As mentioned before, the RDI for potassium is 4700mg so let's take a look at some common foods that fall in the upper 90th percentile of RDI values for potassium - which tends to be in the 10-20% RDI range. Personally, i'm interested in foods that are low in sugar and animal proteins. That said, three of the predominant food groups that would make good candidates for smoothie ingredients are (1) Nut and Nut products, (2) Fruits and Fruit Juices, (3) and Vegetable and Vegetable products.
 
 <img src="{{ site.url }}{{site.baseurl }}/assets/images/figs/Pie.png" alt="Potassium Pie Chart">
 
@@ -38,6 +38,7 @@ The word cloud on the top-left are the potassium-rich foods found in the Nut and
 
 Considering the nutrient correlations shown above, it makes sense to treat potassium as part of a multi-dimensional nutrient construct. So it might be useful to integrate the Iron, Magnesium, Fiber, and Potassium content of a food item in order to generate a score that indexes how multi-dimensional a the item is, and rank the items accordingly. Using a popular approach called principal components analysis (PCA), we can do just that. The details of PCA are beyond the scope of this post, but simply stated, this method allows us to generate a special score that reflects the linear combinations of the nutrients and tells us how much a given food item is loaded with the specified nutrient combos. Here's what that looks like:
 
+<img src="{{ site.url }}{{site.baseurl }}/assets/images/figs/pca.png" alt="Nutrient Multidimensionality using PCA">
 
 R code block:
 ```r
