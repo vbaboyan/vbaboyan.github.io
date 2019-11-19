@@ -26,6 +26,7 @@ The symmetric image on the left is a "heatmap" that renders the pairwise correla
 ## Part 2: Filtering data based on recommended daily intake RDI Subsetting and EDA
 Next, I wanted to scale the nutrient contents by their recommended daily intake (RDI) values. As mentioned before, the RDI for potassium is 4700mg so let's take a look at some common foods that fall in the upper 90th percentile of RDI values for potassium - which tends to be in the 10-20% RDI range. Three of the predominant food groups that match this criterion are (1) nuts and nut products, (2) Fruits and Fruit Juices, (3) and Vegetable and Vegetable products. By discarding the uninteresting foods that fall outside of that range, we can generate a so-called wordcloud for each of this good groups to take get an idea of the types of products found in that category.
 
+<img src="{{ site.url }}{{site.baseurl }}/assets/images/figs/Pie.png" alt="Potassium Pie Chart">
 <img src="{{ site.url }}{{site.baseurl }}/assets/images/figs/wordclouds.png" alt="Potassium WordCloud">
 
 
