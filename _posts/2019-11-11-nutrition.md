@@ -28,7 +28,7 @@ Next, I wanted to scale the nutrient contents by their recommended daily intake 
 
 <img src="{{ site.url }}{{site.baseurl }}/assets/images/figs/Pie.png" alt="Potassium Pie Chart">
 
-By discarding the uninteresting foods that fall outside of that range, we can generate a so-called "Word Cloud" for each of the food groups to take get a sense of the products found in that category.
+By discarding the uninteresting foods that fall outside of that range, we can generate a so-called "Word Cloud" for each of the food groups to take get a sense of the products that fall into each category.
 <img src="{{ site.url }}{{site.baseurl }}/assets/images/figs/wordclouds.png" alt="Potassium WordCloud">
 
 The word cloud on the top-left are the potassium-rich foods found in the Nuts and Nuts Products and the cloud on the top-right are the foods found in the Fruit and Fruit Juices category. The cloud on the bottom is a lot larger since most potassium-rich foods tend to be Vegetable and Vegetable products which makes sense. Although there are quite a few uninformative words in the clouds, you can nonetheless get a good idea of the foods in each category.
