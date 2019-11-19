@@ -24,15 +24,15 @@ The symmetric image on the left is a "heatmap" that renders the pairwise correla
 
 
 ## Data Filtering
-Next, I wanted to scale the nutrient contents by their recommended daily intake (RDI) values. As mentioned before, the RDI for potassium is 4700mg so let's take a look at some common foods that fall in the upper 90th percentile of RDI values for potassium - which tends to be in the 10-20% RDI range. Three of the predominant food groups that match this criterion are (1) nuts and nut products, (2) Fruits and Fruit Juices, (3) and Vegetable and Vegetable products.
+Next, I wanted to scale the nutrient contents by their recommended daily intake (RDI) values. As mentioned before, the RDI for potassium is 4700mg so let's take a look at some common foods that fall in the upper 90th percentile of RDI values for potassium - which tends to be in the 10-20% RDI range. Personally, i'm interested in foods that are low in sugar and animal proteins. That said, three of the predominant food groups that match these interests are (1) nuts and nut products, (2) Fruits and Fruit Juices, (3) and Vegetable and Vegetable products.
 
 <img src="{{ site.url }}{{site.baseurl }}/assets/images/figs/Pie.png" alt="Potassium Pie Chart">
 
-By discarding the uninteresting foods that fall outside of that range, we can generate a so-called "Word Cloud" for each of the food groups to take get a sense of the products that fall into each category.
+By discarding the uninteresting food items that fall outside of that 10-20% range, we can generate a so-called "Word Cloud" for each of the food groups to get a sense of the products that fall into each category. Here's what that looks like for each of the 3 categories of interest:
 
 <img src="{{ site.url }}{{site.baseurl }}/assets/images/figs/wordclouds2.png" alt="Potassium WordCloud">
 
-The word cloud on the top-left are the potassium-rich foods found in the Nut and Nut Products and the cloud on the top-right are the foods found in the Fruit and Fruit Juices. The cloud on the bottom is a lot larger since most potassium-rich foods tend to be Vegetable and Vegetable products which makes sense. This method isn't perfect, as you can easily spot uninformative words in the clouds. But it's as they say, *data isn't a substitute for common sense*. You can nonetheless get a good idea of the foods in each category. What stands out to me here is that the banana is not found in these results.
+The word cloud on the top-left are the potassium-rich foods found in the Nut and Nut Products and the cloud on the top-right are the foods found in the Fruit and Fruit Juices. The cloud on the bottom is a lot larger since most potassium-rich foods tend to be Vegetable and Vegetable products which makes sense. This Wordl-Cloud method isn't perfect, as you can easily spot uninformative words in them (e.g., "english", "partially", "creamed", "products", etc). But it's as they say, **data isn't a substitute for common sense**. You can nonetheless get a good idea of the foods in each category. What stands out to me most is how the banana is absent in these results, while the plantain is not. Interesting. This method also provides evidence that avocados are God's gift to humankind.
 
 ## Rankings Food Items on the Basis of Nutrient Combos
 
