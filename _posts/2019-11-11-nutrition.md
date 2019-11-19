@@ -32,13 +32,24 @@ By discarding the uninteresting food items that fall outside of that 10-20% rang
 
 <img src="{{ site.url }}{{site.baseurl }}/assets/images/figs/wordclouds2.png" alt="Potassium WordCloud">
 
-The word cloud on the top-left are the potassium-rich foods found in the Nut and Nut Products and the cloud on the top-right are the foods found in the Fruit and Fruit Juices. The cloud on the bottom is a lot larger since most potassium-rich foods tend to be Vegetable and Vegetable products which makes sense. This Wordl-Cloud method isn't perfect, as you can easily spot uninformative words in them (e.g., "english", "partially", "creamed", "products", etc). But it's as they say, **data isn't a substitute for common sense**. You can nonetheless get a good idea of the foods in each category. What stands out to me most is how the beloved banana is absent in these results, while the plantain is not. This method also confirms what we had expected to be true all along: Avocados are God's gift to humankind.
+The word cloud on the top-left are the potassium-rich foods found in the Nut and Nut Products and the cloud on the top-right are the foods found in the Fruit and Fruit Juices. The cloud on the bottom is a lot larger since most potassium-rich foods tend to be Vegetable and Vegetable products which makes sense. This Word-Cloud method isn't perfect, as you can easily spot some uninformative words (e.g., "english", "partially", "creamed", "products", etc). But it's as they say, **data isn't a substitute for common sense**. You can nonetheless get a good idea of the foods in each category. What stands out to me most is how the beloved banana is absent in these results, while the plantain is not. This method also confirms what we had expected to be true all along: Avocados are God's gift to humankind.
 
-## Rankings Food Items on the Basis of Nutrient Combos
+## Ranking Food Items on the Basis of Nutrient Combos
 
 Considering the nutrient correlations shown above, it makes sense to treat potassium as part of a multi-dimensional nutrient construct. So it might be useful to integrate the Iron, Magnesium, Fiber, and Potassium content of a food item in order to generate a score that indexes how multi-dimensional a the item is, and rank the items accordingly. Using a popular approach called principal components analysis (PCA), we can do just that. The details of PCA are beyond the scope of this post, but simply stated, this method allows us to generate a special score that reflects the linear combinations of the nutrients and tells us how much a given food item is loaded with the specified nutrient combos. Here's what that looks like:
 
 <img src="{{ site.url }}{{site.baseurl }}/assets/images/figs/pca.png" alt="Nutrient Multidimensionality using PCA">
+
+## Insights
+
+1. Be cautious of the fruits given their high sugar contents
+2. Brazilnuts seem like a great snack
+3. Potassium is highly correlated with Iron, Magnesium, and Fiber
+4. Spinach, Kale, Squash, Avocados, and coconuts are all fantastic.
+5. The Taro root,
+6. Eat more greens.
+7. Coconut Water for smoothies
+8. Beat Greans for salads
 
 R code block:
 ```r
