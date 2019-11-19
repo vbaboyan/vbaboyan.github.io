@@ -34,7 +34,7 @@ By discarding the uninteresting foods that fall outside of that range, we can ge
 
 The word cloud on the top-left are the potassium-rich foods found in the Nut and Nut Products and the cloud on the top-right are the foods found in the Fruit and Fruit Juices. The cloud on the bottom is a lot larger since most potassium-rich foods tend to be Vegetable and Vegetable products which makes sense. This method isn't perfect, as you can easily spot uninformative words in the clouds. But it's as they say, *data isn't a substitute for common sense*. You can nonetheless get a good idea of the foods in each category. What stands out to me here is that the banana is not found in these results.
 
-## Rankings items on the basis of their nutrient combos.
+## Rankings Food Items on the Basis of Nutrient Combos
 
 Considering the heatmap shown above, it makes sense to treat potassium as being part of this larger nutrient construct. So it might be useful to generate some kind of score that takes into account the Iron, Magnesium, Fiber, and Potassium content of a food item in order to rank it relative to the rest. Using a principal components analysis (PCA), we can do exactly that. The details of PCA are beyond the scope of this post, but simply stated, this method allows us to generate a linear combination of the nutrients in order to generate a score that represents how much a given food item is loaded with the specified nutrient combos.
 
