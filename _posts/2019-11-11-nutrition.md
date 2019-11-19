@@ -32,7 +32,7 @@ By discarding the uninteresting foods that fall outside of that range, we can ge
 
 <img src="{{ site.url }}{{site.baseurl }}/assets/images/figs/wordclouds2.png" alt="Potassium WordCloud">
 
-The word cloud on the top-left are the potassium-rich foods found in the Nuts and Nuts Products and the cloud on the top-right are the foods found in the Fruit and Fruit Juices category. The cloud on the bottom is a lot larger since most potassium-rich foods tend to be Vegetable and Vegetable products which makes sense. Although there are quite a few uninformative words in the clouds, you can nonetheless get a good idea of the foods in each category.
+The word cloud on the top-left are the potassium-rich foods found in the Nut and Nut Products and the cloud on the top-right are the foods found in the Fruit and Fruit Juices. The cloud on the bottom is a lot larger since most potassium-rich foods tend to be Vegetable and Vegetable products which makes sense. This method isn't perfect, as you can easily spot uninformative words in the clouds. But it's as they say, *data isn't a substitute for common sense*. You can nonetheless get a good idea of the foods in each category.
 
 ## Recommendations
 
