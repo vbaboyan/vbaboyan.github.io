@@ -24,11 +24,14 @@ The symmetric image on the left is a "heatmap" that renders the pairwise correla
 
 
 ## Data Filtering
-Next, I wanted to scale the nutrient contents by their recommended daily intake (RDI) values. As mentioned before, the RDI for potassium is 4700mg so let's take a look at some common foods that fall in the upper 90th percentile of RDI values for potassium - which tends to be in the 10-20% RDI range. Three of the predominant food groups that match this criterion are (1) nuts and nut products, (2) Fruits and Fruit Juices, (3) and Vegetable and Vegetable products. By discarding the uninteresting foods that fall outside of that range, we can generate a so-called wordcloud for each of this good groups to take get an idea of the types of products found in that category.
+Next, I wanted to scale the nutrient contents by their recommended daily intake (RDI) values. As mentioned before, the RDI for potassium is 4700mg so let's take a look at some common foods that fall in the upper 90th percentile of RDI values for potassium - which tends to be in the 10-20% RDI range. Three of the predominant food groups that match this criterion are (1) nuts and nut products, (2) Fruits and Fruit Juices, (3) and Vegetable and Vegetable products.
 
 <img src="{{ site.url }}{{site.baseurl }}/assets/images/figs/Pie.png" alt="Potassium Pie Chart">
+
+By discarding the uninteresting foods that fall outside of that range, we can generate a so-called "Word Cloud" for each of the food groups to take get a sense of the products found in that category.
 <img src="{{ site.url }}{{site.baseurl }}/assets/images/figs/wordclouds.png" alt="Potassium WordCloud">
 
+The word cloud on the top-left are the potassium-rich foods found in the Nuts and Nuts Products and the cloud on the top-right are the foods found in the Fruit and Fruit Juices category. The cloud on the bottom is a lot larger since most potassium-rich foods tend to be Vegetable and Vegetable products which makes sense. Although there are quite a few uninformative words in the clouds, you can nonetheless get a good idea of the foods in each category.
 
 ## Recommendations
 
