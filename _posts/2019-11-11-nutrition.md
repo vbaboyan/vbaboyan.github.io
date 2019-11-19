@@ -36,7 +36,9 @@ The word cloud on the top-left are the potassium-rich foods found in the Nut and
 
 ## Ranking Food Items on the Basis of Nutrient Combos
 
-Considering the nutrient correlations shown above, it makes sense to treat potassium as part of a multi-dimensional nutrient construct. So it might be useful to integrate the Iron, Magnesium, Fiber, and Potassium content of a food item in order to generate a score that indexes how multi-dimensional a the item is, and rank the items accordingly. Using a popular approach called principal components analysis (PCA), we can do just that. The details of PCA are beyond the scope of this post, but simply stated, this method allows us to generate a special score that reflects the linear combinations of the nutrients and tells us how much a given food item is loaded with the specified nutrient combos. Here's what that looks like:
+Considering the nutrient correlations shown above, wouldn't it be nice to treat potassium as part of a multi-dimensional nutritional construct? Specifically, it'd be useful to have some metric that combines the Iron, Magnesium, Fiber, and Potassium contents in the individual food items to tell us how much of that combination is present. If we can do this, we can then rank the foods along this new axis. Using a popular approach called principal components analysis (PCA), we can do just that. The details of PCA are beyond the scope of this post, but simply stated, this method allows us to generate a special score that reflects how much a given food item is loaded with the specified nutrient combos. I'll be putting this section together, next so check back soon ;)
+
+<!-- #Here's what that looks like:
 
 <img src="{{ site.url }}{{site.baseurl }}/assets/images/figs/pca.png" alt="Nutrient Multidimensionality using PCA">
 
@@ -49,7 +51,7 @@ Considering the nutrient correlations shown above, it makes sense to treat potas
 5. The Taro root,
 6. Eat more greens.
 7. Coconut Water for smoothies
-8. Beat Greans for salads
+8. Beat Greans for salads -->
 
 R code block:
 ```r
