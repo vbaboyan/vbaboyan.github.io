@@ -1,7 +1,7 @@
 ---
-title: "Posts by Year"
-permalink: /year-archive/
-layout: home
+layout: archive
+permalink: /blog/
+title: "Recent Posts"
 author_profile: true
 ---
 
