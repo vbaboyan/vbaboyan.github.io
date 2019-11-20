@@ -3,7 +3,7 @@ main:
   - title: "About"
     url: /about/
   - title: "Blog"
-    url: /nutrition/
+    url: /blog/
   - title: "Projects"
     url: /Under_Construction_projects/
   - title: "Resume"
