@@ -8,7 +8,7 @@ I'm a graduate student currently pursuing a research doctorate in Cognitive Neur
 
 I'd say this space is generally dedicated to not only showcasing my research findings, but also to document and discuss some of my personal interests in nutrition, neuroscience, and anything in between. I truly believe that each of us are have a responsibility in being as informed as possible in learning about our biology, and i'm excited to share my ideas with others in the process through my [blog section](/blog/).
 
->"Let food by thy medicine, and medicine by thy food" -Hippocrates
+>"Let food by thy medicine, and medicine by thy food" -Hippocrates (Father of Medicine)
 
 In my spare time, you can spot me watching NBA games, at the gym boxing or weightlifting, traveling, resisting black licorice temptations, or scouring the internet for records to add to my vinyl collection. The musical genre I enjoy most is electronica especially with highly melodic and worldly elements. My favorite producers are [Nicolas Jaar (CL/US)](https://youtu.be/BMPT8nzg9ho), [David August (DE)](https://youtu.be/cwL_CIhS9Qs), [Satori (NL)](https://www.youtube.com/watch?v=72owSWU1xIM), and [Viken Arman (AM/FR)](https://youtu.be/j_npZfZmRiM).
 
