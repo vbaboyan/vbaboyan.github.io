@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Bio"
-permalink: /about/
+#permalink: /about/
 ---
 
 I'm a graduate student currently pursuing a research doctorate in Cognitive Neuroscience at UC Irvine. As part of my dissertation work - generously funded by the National Science Foundation - I analyze brain scans to study the neurobiology of language with an emphasis on the wiring patterns (i.e., *the connectomics*) enabling this uniquely human capacity.
