@@ -10,7 +10,7 @@ I'm a graduate student currently pursuing a research doctorate in Cognitive Neur
 
 Professionally, I anticipate making the transition from academia into industry in order to work in translational environments where efforts to treat neurological illness are the primary force guiding company operations.
 
-In my spare time, you can spot me watching NBA games, at the gym boxing or weightlifting, traveling, resisting black licorice temptations, or scouring the internet for electronic music records to add to my vinyl collection. The musical genre I enjoy most is electronica especially with highly melodic and wordly elements. My favorite producers are [Nicolas Jaar (CL/US)](https://youtu.be/BMPT8nzg9ho), [David August (DE)](https://youtu.be/cwL_CIhS9Qs), [Satori (NL)](https://www.youtube.com/watch?v=72owSWU1xIM), and [Viken Arman (AM/FR)](https://youtu.be/j_npZfZmRiM).
+In my spare time, you can spot me watching NBA games, at the gym boxing or weightlifting, traveling, resisting black licorice temptations, or scouring the internet for records to add to my vinyl collection. The musical genre I enjoy most is electronica especially with highly melodic and wordly elements. My favorite producers are [Nicolas Jaar (CL/US)](https://youtu.be/BMPT8nzg9ho), [David August (DE)](https://youtu.be/cwL_CIhS9Qs), [Satori (NL)](https://www.youtube.com/watch?v=72owSWU1xIM), and [Viken Arman (AM/FR)](https://youtu.be/j_npZfZmRiM).
 
 >"“And those who were seen dancing were thought to be insane by those who could not hear the music.” - Friedrich Nietzsche
 
