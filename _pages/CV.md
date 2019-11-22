@@ -8,27 +8,27 @@ permalink: /CV/
 
 # Education
 
-Doctor of Philosophy (Ph.D) - Cognitive Neuroscience \
-*University of California, Irvine*  \
+Doctor of Philosophy (Ph.D) - Cognitive Neuroscience<br/>
+*University of California, Irvine* <br/>
 
-Master of Science (M.S) - Cognitive Neuroscience \
-*University of California, Irvine*  \
+Master of Science (M.S) - Cognitive Neuroscience<br/>
+*University of California, Irvine* <br/>
 
-Bachelor of Arts (B.A) Neuropsychology \
+Bachelor of Arts (B.A) Neuropsychology<br/>
 Bachelor of Arts (B.A) - Global & International Studies (Middle East Regional Emphasis)
-*University of California, Santa Barbara*  \
+*University of California, Santa Barbara* <br/>
 
 # Awards
-National Science Foundation Graduate Research Fellowship \
-A 3-Year $100,000 research fellowship to support promising graduate students in Science, Technology, Engineering, and Mathematics (STEM) fields.  \
+National Science Foundation Graduate Research Fellowship<br/>
+A 3-Year $100,000 research fellowship to support promising graduate students in Science, Technology, Engineering, and Mathematics (STEM) fields. <br/>
 Project: *Untangling the Connectional Neuroanatomy of the Language Dominant Cerebral Hemisphere Using Diffusion Weighted Magnetic Resonance Imaging*
 
 # Professional Experience
-Project Specialist \
-Mark & Mary Stevens Neuroimaging and Informatics Institute \
+Project Specialist<br/>
+Mark & Mary Stevens Neuroimaging and Informatics Institute<br/>
 *University of Southern California, Keck School of Medicine*
 
-Research Assistant \
+Research Assistant<br/>
 Department of Neurosurgery
 *University of Texas, Health Science Center, Houston*
 
