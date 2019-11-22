@@ -23,22 +23,22 @@ Bachelor of Arts (B.A) - Global & International Studies <br/>
 
 # Research
 Graduate Student Research Fellow (2015-2019) <br/>
-(Auditory & Language Neuroscience Lab)[https://sites.uci.edu/alns/] <br/>
+[Auditory & Language Neuroscience Lab](https://sites.uci.edu/alns/) <br/>
 *Department of Cognitive Sciences* <br/>
 *University of California, Irvine*
 
 Project Specialist (2014-2015) <br/>
-(Mark & Mary Stevens Neuroimaging and Informatics Institute)[https://www.ini.usc.edu/] <br/>
+[Mark & Mary Stevens Neuroimaging and Informatics Institute](https://www.ini.usc.edu/) <br/>
 *Department of Neurology, Keck School of Medicine*  <br/>
 *University of Southern California*
 
 Research Assistant - Programmer (2012-2014) <br/>
-(Neuroimaging & Intracranial Electrophysiology Lab) [http://www.tandonlab.org/]  <br/>
+[Neuroimaging & Intracranial Electrophysiology Lab](http://www.tandonlab.org/)  <br/>
 *Department of Neurosurgery, UT Houston Medical School* <br/>
 *University of Texas, Health Science Center, Houston*
 
 # Awards
-*National Science Foundation Graduate Research Fellowship Program (NSF-grfp) <br/>*
+*National Science Foundation Graduate Research Fellowship Program ([NSF-grfp](https://www.nsfgrfp.org/)) <br/>*
 A 3-Year $102,000 research fellowship awarded to promising graduate students in Science, Technology, Engineering, and Mathematics (STEM) fields. <br/>
 
 # Programming
