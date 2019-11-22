@@ -25,7 +25,7 @@ Project: *Untangling the Connectional Neuroanatomy of the Language Dominant Cere
 
 # Professional Experience
 Project Specialist \
-Mark & Mary Stevens Neuroimaging and Informatics Institute
+Mark & Mary Stevens Neuroimaging and Informatics Institute \
 *University of Southern California, Keck School of Medicine*
 
 Research Assistant \
