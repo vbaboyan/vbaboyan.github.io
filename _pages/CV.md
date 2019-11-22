@@ -23,17 +23,17 @@ Bachelor of Arts (B.A) - Global & International Studies <br/>
 
 # Research
 Graduate Student Research Fellow (2015-2019) <br/>
-Auditory & Language Neuroscience Lab <br/>
+(Auditory & Language Neuroscience Lab)[https://sites.uci.edu/alns/] <br/>
 *Department of Cognitive Sciences* <br/>
 *University of California, Irvine*
 
 Project Specialist (2014-2015) <br/>
-Mark & Mary Stevens Neuroimaging and Informatics Institute <br/>
+(Mark & Mary Stevens Neuroimaging and Informatics Institute)[https://www.ini.usc.edu/] <br/>
 *Department of Neurology, Keck School of Medicine*  <br/>
 *University of Southern California*
 
 Research Assistant - Programmer (2012-2014) <br/>
-Neuroimaging & Intracranial Electrophysiology Lab  <br/>
+(Neuroimaging & Intracranial Electrophysiology Lab) [http://www.tandonlab.org/]  <br/>
 *Department of Neurosurgery, UT Houston Medical School* <br/>
 *University of Texas, Health Science Center, Houston*
 
