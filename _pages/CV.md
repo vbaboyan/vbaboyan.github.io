@@ -8,32 +8,31 @@ permalink: /CV/
 
 # Education
 
-Doctor of Philosophy (Ph.D) - Cognitive Neuroscience      **2020**
-*University of California, Irvine*
+Doctor of Philosophy (Ph.D) - Cognitive Neuroscience \
+*University of California, Irvine*  \
 
-Master of Science (M.S) - Cognitive Neuroscience          **2018**
-*University of California, Irvine*
+Master of Science (M.S) - Cognitive Neuroscience \
+*University of California, Irvine*  \
 
-Bachelor of Arts (B.A) Neuropsychology                    **2011**
+Bachelor of Arts (B.A) Neuropsychology \
 Bachelor of Arts (B.A) - Global & International Studies (Middle East Regional Emphasis)
-*University of California, Santa Barbara*
+*University of California, Santa Barbara*  \
 
 # Awards
-National Science Foundation Graduate Research Fellowship **2016-2019**
-A 3-Year $100,000 research fellowship to support promising graduate students in Science, Technology, Engineering, and Mathematics (STEM) fields.
+National Science Foundation Graduate Research Fellowship \
+A 3-Year $100,000 research fellowship to support promising graduate students in Science, Technology, Engineering, and Mathematics (STEM) fields.  \
 Project: *Untangling the Connectional Neuroanatomy of the Language Dominant Cerebral Hemisphere Using Diffusion Weighted Magnetic Resonance Imaging*
 
 # Professional Experience
-Project Specialist                                       **2014-2015**
+Project Specialist \
 Mark & Mary Stevens Neuroimaging and Informatics Institute
 *University of Southern California, Keck School of Medicine*
 
-Research Assistant                                       **2012-2014**
+Research Assistant \
 Department of Neurosurgery
 *University of Texas, Health Science Center, Houston*
 
 # Publications
-
 Baboyan VG , Hickok G, and Tandon N. “Brain Pathways Critical For Language Laterality”.
 In: Review: Brain (Journal of Neurology).
 
