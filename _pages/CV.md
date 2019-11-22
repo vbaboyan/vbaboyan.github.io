@@ -70,7 +70,7 @@ Project.” Society for the Neurobiology of Language (SNL).
 
 VG Baboyan, G Hickok and N Tandon (2018). “Quantification and parcellation of
 posterior inferior frontal structural connections to auditory and supplementary
-motor area targets: A diffusion imaging study in neurosurgical patients.” Society
+motor area targets: A diffusion imaging study in neurosurgical patients.” Society
 for the Neurobiology of Language (SNL).
 
 VG Baboyan and PM Thompson (2016). “Disruptions to White Matter Microstructure of the Default Mode Network in Pediatric Traumatic Brain Injury.” Society for
