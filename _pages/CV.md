@@ -6,7 +6,7 @@ sitemap: false
 permalink: /CV/
 ---
 <p style="text-align: center;">
-Curriculum Vitae (Last Updated: Sept, 2019)
+Curriculum Vitae (Current as of: Sept 2019)
 </p>
 
 # Education
