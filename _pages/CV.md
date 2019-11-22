@@ -1,10 +1,13 @@
 ---
-title: "CV"
+#title: "CV"
 layout: single
 #excerpt: "This page is under construction. Please check back later"
 sitemap: false
 permalink: /CV/
 ---
+<p style="text-align: center;">
+# CV
+</p>
 
 # Education
 Doctor of Philosophy (Ph.D) - Cognitive Neuroscience <br/>
