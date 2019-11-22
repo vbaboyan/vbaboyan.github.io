@@ -1,5 +1,5 @@
 ---
-title: "Curriculum Vitae"
+#title: "Curriculum Vitae"
 layout: single
 #excerpt: "This page is under construction. Please check back later"
 sitemap: false
