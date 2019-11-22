@@ -6,7 +6,7 @@ sitemap: false
 permalink: /CV/
 ---
 <p style="text-align: center;">
-Curriculum Vitae
+Curriculum Vitae (Last Updated: Sept, 2019)
 </p>
 
 # Education
@@ -21,18 +21,31 @@ Bachelor of Arts (B.A) - Neuropsychology <br/>
 Bachelor of Arts (B.A) - Global & International Studies <br/>
 *University of California, Santa Barbara (2011)* <br/>
 
-# Awards
-*National Science Foundation Graduate Research Fellowship Program (NSF-grfp) <br/>*
-A 3-Year $100,000 research fellowship to support promising graduate students in Science, Technology, Engineering, and Mathematics (STEM) fields. <br/>
+# Research
+Graduate Student Research Fellow (2015-2019) <br/>
+Auditory & Language Neuroscience Lab <br/>
+Department of Cognitive Sciences <br/>
+*University of California, Irvine*
 
-# Professional Experience
-Project Specialist (2014-2015)<br/>
-Mark & Mary Stevens Neuroimaging and Informatics Institute<br/>
-*University of Southern California, Keck School of Medicine*
+Project Specialist (2014-2015) <br/>
+Mark & Mary Stevens Neuroimaging and Informatics Institute <br/>
+Department of Neurology, Keck School of Medicine  <br/>
+*University of Southern California*
 
 Research Assistant - Programmer (2012-2014) <br/>
+Neuroimaging & Intracranial Electrophysiology Lab  <br/>
 Department of Neurosurgery, UT Houston Medical School <br/>
 *University of Texas, Health Science Center, Houston*
+
+# Awards
+*National Science Foundation Graduate Research Fellowship Program (NSF-grfp) <br/>*
+A 3-Year $102,000 research fellowship awarded to promising graduate students in Science, Technology, Engineering, and Mathematics (STEM) fields. <br/>
+
+# Programming:
+R, UNIX(bash/tcsh), Matlab, Python
+
+# Software
+FreeSurfer, AFNI, FSL
 
 # Publications
 Baboyan VG , Hickok G, and Tandon N. “Brain Pathways Critical For Language Laterality”.
