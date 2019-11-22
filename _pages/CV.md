@@ -42,7 +42,7 @@ Department of Neurosurgery, UT Houston Medical School <br/>
 A 3-Year $102,000 research fellowship awarded to promising graduate students in Science, Technology, Engineering, and Mathematics (STEM) fields. <br/>
 
 # Programming:
-R, UNIX(bash/tcsh), Matlab, Python
+R, UNIX(bash/tcsh), Matlab, Python, LATEX
 
 # Software
 FreeSurfer, AFNI, FSL
