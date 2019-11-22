@@ -9,7 +9,7 @@ permalink: /CV/
 # Education
 
 Doctor of Philosophy (Ph.D) - Cognitive Neuroscience <br/>
-Dissertation:Untangling the Connectional Neuroanatomy of the Language Dominant Cerebral Hemisphere Using Diffusion Weighted Magnetic Resonance Imaging <br/>
+>Dissertation:Untangling the Connectional Neuroanatomy of the Language Dominant Cerebral Hemisphere Using Diffusion Weighted Magnetic Resonance Imaging <br/>
 *University of California, Irvine (Expected: 2019-2020)* <br/>
 
 Master of Science (M.S) - Cognitive Neuroscience<br/>
