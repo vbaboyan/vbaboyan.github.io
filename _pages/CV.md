@@ -8,29 +8,29 @@ permalink: /CV/
 
 # Education
 
-Doctor of Philosophy (Ph.D) - Cognitive Neuroscience<br/>
+Doctor of Philosophy (Ph.D) - Cognitive Neuroscience <br/>
 *Dissertation:Untangling the Connectional Neuroanatomy of the Language Dominant Cerebral Hemisphere Using Diffusion Weighted Magnetic Resonance Imaging* <br/>
-*University of California, Irvine* <br/>
+*University of California, Irvine (Expected: 2019-2020)* <br/>
 
 Master of Science (M.S) - Cognitive Neuroscience<br/>
-*University of California, Irvine* <br/>
+*University of California, Irvine  (2018)* <br/>
 
-Bachelor of Arts (B.A) - Neuropsychology<br/>
+Bachelor of Arts (B.A) - Neuropsychology <br/>
 Bachelor of Arts (B.A) - Global & International Studies (Middle East Regional Emphasis)  <br/>
-*University of California, Santa Barbara* <br/>
+*University of California, Santa Barbara (2011)* <br/>
 
 # Awards
-*National Science Foundation Graduate Research Fellowship (NSF-grfp) <br/>*
+*National Science Foundation Graduate Research Fellowship Program (NSF-grfp) <br/>*
 A 3-Year $100,000 research fellowship to support promising graduate students in Science, Technology, Engineering, and Mathematics (STEM) fields. <br/>
 
 # Professional Experience
 Project Specialist<br/>
 Mark & Mary Stevens Neuroimaging and Informatics Institute<br/>
-*University of Southern California, Keck School of Medicine*
+*University of Southern California, Keck School of Medicine (2014-2015)*
 
 Research Assistant<br/>
 Department of Neurosurgery, UT Houston Medical School <br/>
-*University of Texas, Health Science Center, Houston*
+*University of Texas, Health Science Center, Houston (2012-2014)*
 
 # Publications
 Baboyan VG , Hickok G, and Tandon N. “Brain Pathways Critical For Language Laterality”.
