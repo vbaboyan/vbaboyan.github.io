@@ -1,5 +1,5 @@
 ---
-#title: "Curriculum Vitae"
+title: "CV"
 layout: single
 #excerpt: "This page is under construction. Please check back later"
 sitemap: false
@@ -27,7 +27,7 @@ Project Specialist (2014-2015)<br/>
 Mark & Mary Stevens Neuroimaging and Informatics Institute<br/>
 *University of Southern California, Keck School of Medicine*
 
-Research Assistant (2012-2014) <br/>
+Research Assistant - Programmer (2012-2014) <br/>
 Department of Neurosurgery, UT Houston Medical School <br/>
 *University of Texas, Health Science Center, Houston*
 
