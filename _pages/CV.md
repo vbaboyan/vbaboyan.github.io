@@ -6,7 +6,7 @@ sitemap: false
 permalink: /CV/
 ---
 <p align=center>
-# CV
+**Curriculum Vitae**
 </p>
 
 # Education
