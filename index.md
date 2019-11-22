@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Bio"
+title: "ABOUT"
 #permalink: /about/
 ---
 

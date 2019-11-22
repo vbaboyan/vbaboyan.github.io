@@ -1,10 +1,10 @@
 # main links
 main:
-  - title: "Blog"
+  - title: "BLOG"
     url: /blog/
-  - title: "Projects"
+  - title: "PROJECTS"
     url: /Under_Construction_projects/
-  - title: "Resume"
+  - title: "CV"
     url: /assets/pdfs/VBaboyan_Resume_OFC.pdf
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
