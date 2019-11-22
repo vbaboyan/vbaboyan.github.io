@@ -3,7 +3,7 @@ layout: single
 title: "Potassium and Adrenal Fatigue"
 date: 2019-11-19
 tags: [data science, nutrition, data visualization]
-excerpt: "A data science approach to nutrition"
+excerpt: "A data science approach to combat adrenal fatigue."
 permalink: /nutrition/
 ---
 
