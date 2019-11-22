@@ -48,25 +48,20 @@ R, UNIX(bash/tcsh), Matlab, Python, LaTeX
 FreeSurfer, AFNI, FSL
 
 # Publications
-Baboyan VG , Hickok G, and Tandon N. “Brain Pathways Critical For Language Laterality”.
+**Baboyan VG** , Hickok G, and Tandon N. “Brain Pathways Critical For Language Laterality”.
 In: Review: Brain (Journal of Neurology).
 
-Guadalupe T et al. (2017). “Human subcortical brain asymmetries in 15,847
-people worldwide reveal eects of age and sex”. In: Brain imaging and behavior
-11.5, pp. 1497–1514.
+Guadalupe T, Mathias SR, van Erp TGM, Whelan CD, Zwiers MP, Abe Y, Abramovic L, Agartz I, Andreassen OA, Arias-Vasquez A, Aribisala B, Armstrong NJ, Arlt V, Artiges E, Ayesa-Arriola R, **Baboyan VG**,…,Thompson PM, Grahn DC, Mazoyer B, Fisher SE, Francks C. (2016) Human Brain Asymmetries in 15, 847 People Worldwide Reveal Effects of Age and Sex. (Brain Imaging & Behavior)
 
-Kadipasaoglu CM, Conner CR, Baboyan VG, et al. (2017). “Network dynamics of
-human face perception”. In: PloS one 12.11, e0188834.
+Kadipasaoglu CM, Conner CR,  **Baboyan VG**, Pieters TA, Tandon N. (2015) Network Dynamics of Human Face Perception. PloS one.
 
-Daianu M, Mendez M, Baboyan VG,... Thompson PM. (2016). “An advanced white
-matter tract analysis in frontotemporal dementia and early-onset Alzheimer’s
-disease”. In: Brain imaging and behavior 10.4, pp. 1038–1053.
+Daianu M, Mendez MF, **Baboyan VG**, Jin Y, Melrose RJ, Jimenez EE, Thompson PM. (2015) An Advanced White Matter Tract Analysis in Frontotemporal Dementia and Early-Onset Alzheimer’s Disease. Brain Imaging & Behavior.
 
-Kadipasaoglu CM, Conner CR, Meagan Lee Whaley, et al. (2016). “Category-selectivity in human visual cortex follows cortical topology: a grouped icEEG study”.
-In: PloS one 11.6, e0157109.
+Kadipasaoglu, CM, Whaley ML, Conner CR, **Baboyan VG**, Tandon N. (2016) Category-Selectivity in Human Visual Cortex Follows Cortical Topology: A Grouped icEEG Study. PloS one
 
-Kadipasaoglu CM, Forseth K, et al. (2015). “Development of grouped icEEG for
-the study of cognitive processing”. In: Frontiers in psychology 6, p. 1008.
+Kadipasaoglu, CM, Forseth K, Whaley ML, Conner CR, Rollo MJ, **Baboyan VG**, Tandon N. (2015) Development of grouped icEEG for the study of cognitive processing. Frontiers in psychology
+
+Kadipasaoglu CM, **Baboyan VG**, Conner CR, Chen G, Saad ZS, Tandon N. (2014) Surface-Based Mixed Effects Multilevel Analysis of Grouped Human Electro-Corticography. NeuroImage.
 
 # Conference Presentations
 VG Baboyan and G Hickok (2019). “Mapping the eloquent transcortical pathways
