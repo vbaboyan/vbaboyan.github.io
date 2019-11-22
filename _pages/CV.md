@@ -7,7 +7,6 @@ permalink: /CV/
 ---
 
 # Education
-
 Doctor of Philosophy (Ph.D) - Cognitive Neuroscience <br/>
 *University of California, Irvine (Expected: 2019-2020)* <br/>
 >Dissertation:Untangling the Connectional Neuroanatomy of the Language Dominant Cerebral Hemisphere Using Diffusion Weighted Magnetic Resonance Imaging
