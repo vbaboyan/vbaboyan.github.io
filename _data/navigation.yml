@@ -1,7 +1,8 @@
 # main links
 main:
   - title: "BLOG"
-    url: /blog/
+    #url: /blog/ #use this when ready to publish blog archive
+    url: /Under_Construction_blog/
   - title: "PROJECTS"
     url: /Under_Construction_projects/
   - title: "CV"
