@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "contrast" #"default", "air", "aqua", "contrast", "da
 
 # Site Settings
 locale                   : "en-US"
-title                    : "VATCHÉ G BABOYAN"
+title                    : "VATCHÉ G. BABOYAN"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "VATCHÉ G BABOYAN"
+name                     : "VATCHÉ G. BABOYAN"
 description              : "Cognitive Neuroscientist"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
