@@ -5,7 +5,8 @@ main:
   - title: "PROJECTS"
     url: /Under_Construction_projects/
   - title: "CV"
-    url: /assets/pdfs/VBaboyan_Resume_OFC.pdf
+    #url: /assets/pdfs/VBaboyan_Resume_OFC.pdf
+    url: /CV/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
