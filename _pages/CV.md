@@ -5,7 +5,7 @@ layout: single
 sitemap: false
 permalink: /CV/
 ---
-<p style="text-align: center;">
+<p align=center>
 # CV
 </p>
 
