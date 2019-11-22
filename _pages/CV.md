@@ -23,13 +23,13 @@ Bachelor of Arts (B.A) - Global & International Studies <br/>
 A 3-Year $100,000 research fellowship to support promising graduate students in Science, Technology, Engineering, and Mathematics (STEM) fields. <br/>
 
 # Professional Experience
-Project Specialist<br/>
+Project Specialist (2014-2015)<br/>
 Mark & Mary Stevens Neuroimaging and Informatics Institute<br/>
-*University of Southern California, Keck School of Medicine (2014-2015)*
+*University of Southern California, Keck School of Medicine*
 
-Research Assistant<br/>
+Research Assistant (2012-2014) <br/>
 Department of Neurosurgery, UT Houston Medical School <br/>
-*University of Texas, Health Science Center, Houston (2012-2014)*
+*University of Texas, Health Science Center, Houston*
 
 # Publications
 Baboyan VG , Hickok G, and Tandon N. “Brain Pathways Critical For Language Laterality”.
