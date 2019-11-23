@@ -7,6 +7,11 @@ excerpt: "A data science approach to achieving adequate nutrition."
 permalink: /nutrition/
 ---
 
+# Tips
+1. Dont focus on adrenal fatigue since it may raise concerns about having a serious disease
+2. Make the post about potassium and how your adrenals need it
+3. Conclude with a list of recommendations: 1) Sleep, 2) Potassium Deficiency, 3) Clinical Depression / Lack of Motivation
+
 ## Background
 By now it is pretty well-established that the Standard American Diet (SAD) is a suboptimal approach to achieving adequate nutrition. One area where this fact is exceptionally pronounced is in potassium intake. Less than 2% of Americans achieve the recommended daily intake of potassium (4700mg), which is most likely the result of not consuming enough greens. When i've brought this stat up with friends, a common question is: "How much potassium is there in a banana"? Your typical banana contains about 300mg of Potassium, so unless you're eating around 15 bananas a day, you're probably not aware of how much you really need for your body to function appropriately. The reason I felt compelled to look into this in the first place was because I noticed being more anxious and sluggish than usual, especially at times when I shouldn't have been. Before heading to a physician, I felt it was important to take a look at my diet. What would a nutritionist say? I think it's essential to make sure that the body's hardware is properly maintained before pathologizing it's software. Indeed, my research led me to a possible mechanism, "adrenal fatigue". A fascinating relationship appears to exist between adrenal function and potassium levels in the body. Studies have shown that elevated stress-hormone (i.e., cortisol) and potassium levels are negatively correlated.
 
