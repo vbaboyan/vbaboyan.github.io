@@ -1,6 +1,8 @@
 ---
-layout: single
+layout: splash
 title: "About"
+header:
+  image:"/_images/Header.png"
 #permalink: /about/
 ---
 
