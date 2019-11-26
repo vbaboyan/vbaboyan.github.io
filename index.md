@@ -4,16 +4,16 @@ layout: splash
 #permalink: /splash-page/
 #date: 2016-03-23T11:48:41-04:00
 header:
-  overlay_color: "#000"
-  overlay_filter: "0.5"
-  overlay_image: /assets/images/figs/Connectomics.png
+  #overlay_color: "#000"
+  #overlay_filter: "0.5"
+  overlay_image: /assets/images/splash/Header.png
   #actions:
   #  - label: "Download"
   #    url: "https://github.com/mmistakes/minimal-mistakes/"
   #caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 #excerpt: "Bacon ipsum dolor sit amet salami ham hock ham, hamburger corned beef short ribs kielbasa biltong t-bone drumstick tri-tip tail sirloin pork chop."
 intro:
-  - excerpt: 'Welcome To My Personal Webpage'
+  - excerpt: 'Welcome to my Personal Webpage'
 feature_row:
   - image_path: assets/images/splash/unsplash1.jpg
     alt: "placeholder image 1"
@@ -24,8 +24,8 @@ feature_row:
     alt: "placeholder image 2"
     title: "Blog"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
-    url: "#test-link"
-    btn_label: "Read More"
+    url: /blog/
+    btn_label: "Archive"
     btn_class: "btn--primary"
   - image_path: assets/images/splash/unsplash3.jpg
     title: "CV"
