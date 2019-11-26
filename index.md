@@ -2,11 +2,21 @@
 layout: splash
 title: "About"
 header:
-  image:"/_images/Header.png"
+  image: assets/_images/Header.png
 #permalink: /about/
 ---
 
 I'm a graduate student currently pursuing a research doctorate in Cognitive Neuroscience at UC Irvine. As part of my dissertation work, supported by the National Science Foundation, I analyze brain scans to study the neurobiology of language with an emphasis on the wiring patterns (i.e., *the connectomics*) enabling this uniquely human capacity. I'm passionate about applying data science tools on all sorts of problems, with the goal of generating insights that help the data "speak for itself". My graduate work is made possible through a variety of scripting languages (R, Matlab, UNIX), neuroimaging software (FreeSurfer,FSL,AFNI), and high-performance computing (SGE,Slurm) offered through the excellent HPC resources at UCI. Professionally, I anticipate making the transition from academia research into industry settings in order to work in translational environments where efforts to treat neurological illness are the primary force guiding company operations.
+
+{% include feature_row id="intro" type="center" %}
+
+{% include feature_row %}
+
+{% include feature_row id="feature_row2" type="left" %}
+
+{% include feature_row id="feature_row3" type="right" %}
+
+{% include feature_row id="feature_row4" type="center" %}
 
 I'd say this space is generally dedicated to not only showcasing my research findings, but also to document and discuss some of my personal interests in nutrition, neuroscience, and anything in between. I truly believe that each of us are have a responsibility in being as informed as possible when it comes to our biology, and i'm excited to share my ideas with others in the process through my [blog section](/blog/).
 
