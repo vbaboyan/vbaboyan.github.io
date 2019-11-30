@@ -243,5 +243,5 @@ plot2<-ggplot(green.pca2,aes(x = Name,y = Comp.1,colour=Group,fill=Group))+
   theme(axis.title.x=element_blank(), axis.text.x=element_blank(),
                       axis.ticks.x=element_blank())+theme_bw()
 
-ggplotly(plot2)
+ggplotly(plot2,tooltip = "text")
 ```
