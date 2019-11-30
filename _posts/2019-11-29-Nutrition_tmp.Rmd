@@ -71,7 +71,8 @@ corrplot(cor.mat,
          rect.lwd = 4,
          cl.pos = "b", 
          tl.col="black", tl.srt=45, tl.cex=.7,cex.main=1,
-         title = "Heatmap of Correlations Between Food Contents",mar = c(1,1,1,1)
+         #title = "Heatmap of Correlations Between Food Contents",
+         mar = c(1,1,1,1)
          #number.cex=0.7
          )
 
@@ -83,9 +84,8 @@ dend<-as.dendrogram(nutr.hclust)
 #dev.off()
 ```
 
-The plot on the left is a "heatmap" that displays the correlations between nutrition contents as a pixellated image. The blue-ish pixels in the image represent positive correlations, and vice versa for red-ish pixels. When you zoom in on the image, you can see how foods that are high in potassium tend to also be high in other vital nutrients like Iron, Fiber, and Magnesium. For me, this makes sense because i've come across so may articles or videos that discuss the nutritional value of each of these contents, and often times it sounds like they have highly overlapping roles in the body. To make this point clear, i've used a data-driven sorting tool, called "Hierarchical Clustering", to arrange the nutrients in the image based on how correlated they are and grouped them  accordingly (denoted by the colored squares on the left and the "dendrogram" on the right). Let's take a closer look at the group containing potassium.
+The plot on the left is a "heatmap" that displays the correlations between nutrition contents as a pixellated image. The blue-ish pixels in the image represent positive correlations, and vice versa for red-ish pixels. When you zoom in on the image, you can see how foods that are high in potassium tend to also be high in other vital nutrients like Iron, Fiber, and Magnesium. For me, this makes sense because i've come across so may articles or videos that discuss the nutritional value of each of these contents, and often times it sounds like they have highly overlapping roles in the body. Let's take a closer look at the group containing potassium.
 
-<h3> Subsetting </h3>
 What I wanted to do next was to look at the foods that we're loaded with these nutrients. But first, we should scale the nutrient contents by their recommended daily intake (RDI) values to make them comparable. As mentioned before, the RDI for potassium is 4700mg so let's take a look at which food categories fall into the upper 90th percentile of RDI values for potassium - which tends to be in the 10-20% RDI range. The pie chart below gives us this information, and it's no surprise that vegetables are a big chunk of the pie:
 
 
@@ -134,7 +134,7 @@ pie(pie.dat$Freq,labels = pie.labs,radius = .9,col = opal,cex=.6,main = "The Per
 
 If we're interested in making a dietary recommendation, I think it's easiest to work with products that can be easily thrown into a blender for a smoothie. So let's look at the following 3 categories: (1) Nut and Nut products, (2) Fruits and Fruit Juices, (3) and Vegetable and Vegetable products. What are some products that fall into this category of high-potassium foods? We can use a "Word Cloud" to visualize the most common words found in these foods items, after removing those that fall out side of the 10-20% RDI range. Here's what that looks like for each of the 3 categories of interest:
 
-<h3> <center> Word Clouds </center></h3>
+<h3> <center> Examples of Potassium-Rich Fruits, Vegetables, and Nut Products</center></h3>
 ```{r Wordclouds,warning=FALSE,message=FALSE,echo=FALSE,fig.width =10,fig.height =6,fig.align="center"}
 # remove stupid categories
 good.cats<-unique(green.dset2$Food.Group)[c(5,7,8)]
@@ -189,7 +189,7 @@ wc.plots<-grid.arrange(wc1,wc2,wc3,nrow=2,ncol=2,
 
 The word cloud on the top-left shows the potassium-rich foods found in the Nut and Nut Products while the cloud on the top-right shows those that are found in Fruit and Fruit Juices. The cloud on the bottom shows Vegetable and Vegetable Prodcuts and is a lot larger since most potassium-rich foods tend to fall in this category of foods. These plots aren't perfect - you can easily spot some uninformative adjective words (e.g., "Chinese", "European", "pealed", "dried", etc). Also, the size of the words are not actually weighted by potassium content. Rather, theses are simply words that are most commonly listed in the table of high-potassium foods (e.g. Kale definitely has more potassium than a potato). But you can nonetheless get a good idea of the foods found in each category. What stands out to me most is how the beloved banana is absent in these results, while the plantain is not. This method also confirms what we had expected to be true all along: Avocados are God's gift to humankind.
 
-<h3> Ranking foods based on multiple dimensions </h3>
+<h3> Ranking Foods </h3>
 
 Considering how many of the nutrients are correlated with each other (as shown above), it makes sense to treat potassium as part of a multi-dimensional nutritional construct. I'd find it useful to have some metric that combines the Iron, Magnesium, Fiber, and Potassium contents found in the individual food items to tell us how much of that **combination** that food has available, rather than just consider potassium by itself. Using a popular approach called principal components analysis (PCA), we can rank foods on the basis of their combined Potassium/Iron/Magnesium/Fiber contents:
 
@@ -259,5 +259,11 @@ One food that isn't represented in this analysis but serves as a fantastic bever
 The rest of your daily needs can easily be satisfied through healthy snacks like chestnuts or brazilnuts, or through a nice side-salad with your meals (e.g.,Kale, Spinach, Taro leaves, Brussel Sprouts).
 
 
-
+<h3> Summary & Insights </h3>
+<ul> Most people don't get enough Potassium due to inadequate consumption of greens.
+<ul> The recommended daily intake (RDI) for Potassium is 4700mg and a single banana has only 300mg.
+<ul> Foods that are high in potassium also tend to be high in Magnesium, Iron, and Fiber. This is what makes vegetables so special.
+<ul> Kale, Spinach, Avocados, and a variety of different nuts are a great source of these vital nutrients.
+<ul> Be cautious of fruits and dates, they are loaded with sugar.
+<ul> A smoothie blend consisting of coconut water, kale, an avocado, and a banana is a great way to get closer to the RDI.
 
