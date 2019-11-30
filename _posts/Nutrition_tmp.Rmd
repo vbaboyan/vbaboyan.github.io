@@ -1,5 +1,5 @@
 ---
-title: "Adrenal Fatigue"
+title: "Potassium Deficiency and Adrenal Function"
 #author: "Vatché Baboyan"
 #date: "11/29/2019"
 output: html_document
@@ -51,10 +51,10 @@ d<-as.dist(d)
 ```
 
 <h3> Potassium and Adrenal Fatigue </h3>
-A fascinating relationship appears to exist between adrenal function and potassium levels in the body. Studies have shown that cortisol (i.e., the stress hormone) and potassium levels are negatively correlated. Personally, I think a widely neglected factor contributing to such unnatural spikes in cortisol - aside from the lack of adequate vegetable consumption - is excessive caffeine intake [[1]]. Caffeine has been shown to undesirably stimulate the adrenals, such that levels of cortisol after caffeine consumption are similar to those experienced during an acute stress response. As a grad student, i'll be the first to admit that *I drink wayyyy too much coffee*. Potassium, on the other hand, appears to have a *calming effect* on the body and is even referred to as the body's  "natural tranquilizer". In fact, potassium bromide was once used as a sedative for clinical patients and even as an anti-convulsant to treat epilepsy [[2]]. In any event, it's reasonable to expect that the combination of elevated cortisol and depleted potassium can't be good for your body. This combination can potentially lead your body into a chronically active fight-or-flight state, which essentially makes all of your vital organs *hyper-excitable*. Indeed, one of the primary characteristics of an unhealthy adrenal is irritability and anxiety. Once you factor in the elevated cholesterol levels that often accompany the SAD diet, the body's circulation system could be a real mess [[3]]. What are some ways to counteract these mechanisms and get closer to the 4700mg recommendation? Let's see if we can use some data to answer this question using a publicly available dataset provided from the [U.S. Agricultural Research Service Food Data Central](https://www.myfooddata.com/).
+A fascinating relationship appears to exist between adrenal function and potassium levels in the body. Studies have shown that cortisol (i.e., the stress hormone) and potassium levels are negatively correlated. Personally, I think a widely neglected factor contributing to such unnatural spikes in cortisol - aside from the lack of adequate vegetable consumption - is excessive caffeine intake [[1]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2257922/). Caffeine has been shown to undesirably stimulate the adrenals, such that levels of cortisol after caffeine consumption are similar to those experienced during an acute stress response. As a grad student, i'll be the first to admit that *I drink wayyyy too much coffee*. Potassium, on the other hand, appears to have a *calming effect* on the body and is even referred to as the body's  "natural tranquilizer". In fact, potassium bromide was once used as a sedative for clinical patients and even as an anti-convulsant to treat epilepsy [[2]](https://www.chemistryworld.com/podcasts/potassium-bromide/6805.article). In any event, it's reasonable to expect that the combination of elevated cortisol and depleted potassium can't be good for your body. This combination can potentially lead your body into a chronically active fight-or-flight state, which essentially makes all of your vital organs *hyper-excitable*. Indeed, one of the primary characteristics of an unhealthy adrenal is irritability and anxiety. Once you factor in the elevated cholesterol levels that often accompany the SAD diet, the body's circulation system could be a real mess [[3]](https://www.ahajournals.org/doi/full/10.1161/01.CIR.98.12.1198). What are some ways to counteract these mechanisms and get closer to the 4700mg recommendation? Let's see if we can use some data to answer this question using a publicly available dataset provided from the [U.S. Agricultural Research Service Food Data Central](https://www.myfooddata.com/).
 
 
-```{r HeatMap, echo=FALSE,fig.width =10,fig.height =11}
+```{r HeatMap, echo=FALSE,fig.width =7,fig.height =7}
 getPalette<-distinctColorPalette(k = 14, altCol = T, runTsne = FALSE)
 #png(file=paste(figdir,"/Corplot.png",sep = ""),height = 5,width = 8,units="in",res=300)
 par(mfrow=c(1,1))#,pty="s")
@@ -70,7 +70,7 @@ corrplot(cor.mat,
          rect.col = getPalette, 
          rect.lwd = 4,
          cl.pos = "b", 
-         tl.col="black", tl.srt=45, tl.cex=.6,cex.main=1,
+         tl.col="black", tl.srt=45, tl.cex=.7,cex.main=1,
          title = "Heatmap of Correlations Between Food Contents",mar = c(1,1,1,1)
          #number.cex=0.7
          )
@@ -115,7 +115,7 @@ bad.rows<-which(green.dset$Potasssium..mg.>0.2 | green.dset$Fiber..g.>0.2 | gree
 green.dset<-green.dset[-bad.rows,]
 ```
 
-```{r echo=FALSE,fig.width =7,fig.height =7,fig.align="center"}
+```{r echo=FALSE,fig.width =7,fig.height =5,fig.align="center"}
 #Potassium Rich Foods
 thresh<-quantile(green.dset$Potasssium..mg.,0.90,na.rm = T)
 green.dset2<-green.dset[green.dset$Potasssium..mg.>thresh,]
@@ -128,13 +128,14 @@ opal <- palette(mycols)
 
 #png(file=paste(figdir,"/Pie.png",sep = ""),width = 5,height = 3,units = "in",res=300)
 par(mfrow=c(1,1))
-pie(pie.dat$Freq,labels = pie.labs,radius = 1,col = opal,cex=0.5,main = "The Percentage of High-Potassium Items by Food Category",cex.main=1,mar=c(1,1,1,1))
+pie(pie.dat$Freq,labels = pie.labs,radius = .9,col = opal,cex=.6,main = "The Percentage of High-Potassium Items by Food Category",cex.main=1,mar=c(1,1,1,1))
 #dev.off()
 ```
 
 If we're interested in making a dietary recommendation, I think it's easiest to work with products that can be easily thrown into a blender for a smoothie. So let's look at the following 3 categories: (1) Nut and Nut products, (2) Fruits and Fruit Juices, (3) and Vegetable and Vegetable products. What are some products that fall into this category of high-potassium foods? We can use a "Word Cloud" to visualize the most common words found in these foods items, after removing those that fall out side of the 10-20% RDI range. Here's what that looks like for each of the 3 categories of interest:
 
-```{r Wordclouds, echo=FALSE,fig.width =10,fig.height =6,fig.align="center"}
+<h3> <center> Word Clouds </center></h3>
+```{r Wordclouds,warning=FALSE,message=FALSE,echo=FALSE,fig.width =10,fig.height =6,fig.align="center"}
 # remove stupid categories
 good.cats<-unique(green.dset2$Food.Group)[c(5,7,8)]
 green.dset3<-subset(green.dset2,Food.Group %in% good.cats)
@@ -166,7 +167,7 @@ wc.plot<-function(dset,cat){
   freq <- slam::row_sums(wc.dset.idf.tdm)
   words <- names(freq) 
   wc<-ggwordcloud(words,
-                  scale = c(3,0.5), 
+                  scale = c(2.5,0.5), 
                   freq,
                   min.freq = 0,
                   max.words=400, 
@@ -186,14 +187,14 @@ wc.plots<-grid.arrange(wc1,wc2,wc3,nrow=2,ncol=2,
                        layout_matrix = rbind(c(1,2), c(3,3)))
 ```
 
-The word cloud on the top-left are the potassium-rich foods found in the Nut and Nut Products and the cloud on the top-right are the foods found in the Fruit and Fruit Juices. The cloud on the bottom is a lot larger since most potassium-rich foods tend to be Vegetable and Vegetable products. This plot isn't perfect - you can easily spot some uninformative words (e.g., "english", "partially", "creamed", "products", etc) - but data isn't a substitute for common sense. Also, the size of the words are not weighted by potassium content. Rather, theses are the words that are most commonly listed in the table of high-potassium foods (e.g. Kale definitely has more potassium than a potato). But you can nonetheless get a good idea of the foods found in each category. What stands out to me most is how the beloved banana is absent in these results, while the plantain is not. This method also confirms what we had expected to be true all along: Avocados are God's gift to humankind.
+The word cloud on the top-left shows the potassium-rich foods found in the Nut and Nut Products while the cloud on the top-right shows those that are found in Fruit and Fruit Juices. The cloud on the bottom shows Vegetable and Vegetable Prodcuts and is a lot larger since most potassium-rich foods tend to fall in this category of foods. These plots aren't perfect - you can easily spot some uninformative adjective words (e.g., "Chinese", "European", "pealed", "dried", etc). Also, the size of the words are not actually weighted by potassium content. Rather, theses are simply words that are most commonly listed in the table of high-potassium foods (e.g. Kale definitely has more potassium than a potato). But you can nonetheless get a good idea of the foods found in each category. What stands out to me most is how the beloved banana is absent in these results, while the plantain is not. This method also confirms what we had expected to be true all along: Avocados are God's gift to humankind.
 
 <h3> Ranking foods based on multiple dimensions </h3>
 
 Considering the nutrient correlations shown above, wouldn't it be nice to treat potassium as part of a multi-dimensional nutritional construct? I'd find it useful to have some metric that combines the Iron, Magnesium, Fiber, and Potassium contents found in the individual food items to tell us how much of that **combination** that food has available. If we can do this, we can then rank the foods along this new axis. Using a popular approach called principal components analysis (PCA), we can do just that. The details of PCA are beyond the scope of this post, but simply stated, this method allows us to generate a special score that reflects how much a given food item is loaded with the specified nutrient combos. I'll be putting this section together next, so check back soon :)
 
 
-```{r PCA,echo=FALSE,fig.width =10,fig.height=5, fig.align="center"}
+```{r PCA,echo=FALSE,warning=FALSE,fig.width =10,fig.height=5, fig.align="center"}
 nb<-estim_ncpPCA(green.dset3[,3:6],ncp.max = 4)
 res.comp<-imputePCA(green.dset3[,3:6],ncp=2)
 green.pca<-princomp(res.comp$completeObs,scores = T)
@@ -205,6 +206,7 @@ green.pca2$Name<-green.dset3[row.names(green.pca2),2]
 green.pca2$Group<-green.dset3[row.names(green.pca2),1]
 green.pca2<-cbind(green.pca2,green.dset3[row.names(green.pca2),3:8])
 plot<-ggplot(green.pca2,aes(Comp.1,Comp.2,colour=Group))+
+  scale_colour_manual(values = c("orange", "brown", "darkgreen"))+
   geom_point(aes(text=paste(
     "Name: ",Name,"<br>",
     "Potassium: ",round(Potasssium..mg.*100,digits = 2),"%<br>",
@@ -213,9 +215,33 @@ plot<-ggplot(green.pca2,aes(Comp.1,Comp.2,colour=Group))+
     "Fiber: ",round(Fiber..g.*100,digits = 2),"%<br>",
     "Sugar: ",round(Sugar..g.*100,digits = 2),"%<br>",
     sep="")),size=3)+
+  ylim(-0.2,0.2)+xlim(-.15,.15)+
+  geom_hline(yintercept = 0)+
+  geom_vline(xintercept = 0)+
   theme_bw()
 
-ggplotly(plot)
-
+#ggplotly(plot)
 ```
 
+```{r PCA2,echo=FALSE,warning=FALSE,fig.width =11,fig.height=7, fig.align="center"}
+green.pca2<-green.pca2[order(green.pca2$Comp.1,decreasing = F),]
+green.pca2$Name<-factor(green.pca2$Name,levels = green.pca2$Name)
+
+plot2<-ggplot(green.pca2,aes(x = Name,y = Comp.1,colour=Group,fill=Group))+
+    scale_colour_manual(values = c("orange", "brown", "darkgreen"))+
+    scale_fill_manual(values = c("orange", "brown", "darkgreen"))+
+  geom_bar(aes(y=Comp.1,text=paste(
+    "Name: ",Name,"<br>",
+    "Potassium: ",round(Potasssium..mg.*100,digits = 2),"%<br>",
+    "Magnesium: ",round(Magnesium..mg.*100,digits = 2),"%<br>",
+    "Iron: ",round(Iron..mg.*100,digits = 2),"%<br>",
+    "Fiber: ",round(Fiber..g.*100,digits = 2),"%<br>",
+    "Sugar: ",round(Sugar..g.*100,digits = 2),"%<br>",
+    "Fiber: ",round(Fiber..g.*100,digits = 2),"%<br>",
+    sep="")),width = .3,stat = "identity",position="dodge")+
+  ylim(-0.11,0.12)+ylab("Score")+
+  theme(axis.title.x=element_blank(), axis.text.x=element_blank(),
+                      axis.ticks.x=element_blank())+theme_bw()
+
+ggplotly(plot2)
+```
