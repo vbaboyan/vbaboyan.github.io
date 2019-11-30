@@ -191,10 +191,9 @@ The word cloud on the top-left shows the potassium-rich foods found in the Nut a
 
 <h3> Ranking foods based on multiple dimensions </h3>
 
-Considering the nutrient correlations shown above, wouldn't it be nice to treat potassium as part of a multi-dimensional nutritional construct? I'd find it useful to have some metric that combines the Iron, Magnesium, Fiber, and Potassium contents found in the individual food items to tell us how much of that **combination** that food has available. If we can do this, we can then rank the foods along this new axis. Using a popular approach called principal components analysis (PCA), we can do just that. The details of PCA are beyond the scope of this post, but simply stated, this method allows us to generate a special score that reflects how much a given food item is loaded with the specified nutrient combos. I'll be putting this section together next, so check back soon :)
+Considering how many of the nutrients are correlated with each other (as shown above), it makes sense to treat potassium as part of a multi-dimensional nutritional construct. I'd find it useful to have some metric that combines the Iron, Magnesium, Fiber, and Potassium contents found in the individual food items to tell us how much of that **combination** that food has available, rather than just consider potassium by itself. Using a popular approach called principal components analysis (PCA), we can rank foods on the basis of their combined Potassium/Iron/Magnesium/Fiber contents:
 
-
-```{r PCA,echo=FALSE,warning=FALSE,fig.width =10,fig.height=5, fig.align="center"}
+```{r PCA,echo=FALSE,warning=FALSE,fig.width =10,fig.height=7, fig.align="center"}
 nb<-estim_ncpPCA(green.dset3[,3:6],ncp.max = 4)
 res.comp<-imputePCA(green.dset3[,3:6],ncp=2)
 green.pca<-princomp(res.comp$completeObs,scores = T)
@@ -223,13 +222,13 @@ plot<-ggplot(green.pca2,aes(Comp.1,Comp.2,colour=Group))+
 #ggplotly(plot)
 ```
 
-```{r PCA2,echo=FALSE,warning=FALSE,fig.width =10,fig.height=6, fig.align="center"}
+```{r PCA2,echo=FALSE,warning=FALSE,fig.width =9,fig.height=5, fig.align="center"}
 green.pca2<-green.pca2[order(green.pca2$Comp.1,decreasing = F),]
 green.pca2$Name<-factor(green.pca2$Name,levels = green.pca2$Name)
-
+cols<-rev(brewer.pal(3, "Dark2"))
 plot2<-ggplot(green.pca2,aes(x = Name,y = Comp.1,colour=Group,fill=Group))+
-    scale_colour_manual(values = c("orange", "brown", "darkgreen"))+
-    scale_fill_manual(values = c("orange", "brown", "darkgreen"))+
+    scale_colour_manual(values = cols)+
+    scale_fill_manual(values = cols)+
   geom_bar(aes(y=Comp.1,text=paste(
     "Name: ",Name,"<br>",
     "Potassium: ",round(Potasssium..mg.*100,digits = 2),"%<br>",
@@ -239,9 +238,26 @@ plot2<-ggplot(green.pca2,aes(x = Name,y = Comp.1,colour=Group,fill=Group))+
     "Sugar: ",round(Sugar..g.*100,digits = 2),"%<br>",
     "Fiber: ",round(Fiber..g.*100,digits = 2),"%<br>",
     sep="")),width = .3,stat = "identity",position="dodge")+
-  ylim(-0.11,0.12)+ylab("Score")+
-  theme(axis.title.x=element_blank(), axis.text.x=element_blank(),
-                      axis.ticks.x=element_blank())+theme_bw()
+  ylim(-0.11,0.12)+ylab("Score")+xlab("")+theme_calc()+
+  theme(axis.text.x=element_blank(),
+        #axis.ticks.x=element_blank(),
+        axis.ticks.y=element_blank(),
+        axis.text.y=element_blank(),
+        legend.position = "top",
+        plot.title = element_text(hjust = 0.5))+
+  ggtitle("Ranking Foods with Strongest Nutrient Combinations")
 
-ggplotly(plot2,tooltip = "text")
+ggplotly(plot2,tooltip = "text") %>%
+layout(legend = list(orientation = "h", x = 1, y = 1))
 ```
+The bar plot above shows us all of the foods that are rich in potassium, but ordered according to how much additional stuff they carry. The bars on the far right are the ones that give you the most bang for your buck, while the ones are the far left are foods that are concentrated with purely potassium. Hovering your cursor over each individual bar will give you the food's name along with its contents (scaled by RDI). I've included their sugar contents since it's ideal to stay away from foods that are packed with sugar. Unfortuantely, fruits are highly nutritious but are loaded with sugar. Take for example, the purple bar on the far-right: Medjdool dates. Although dates are a great source of the nutrients, they contain 132% of your recommended daily intake for sugar. This is a ridiculous amount and i'd say a food like this is best avoided. In contrast, california avocado's (the 4th purple bar from the right) is loaded with great contents and has nearly 0% sugar. Again, avocados - especially from California - are flat out impressive.
+
+<h3> Recommendations </h3>
+
+One food that isn't represented in this analysis but serves as a fantastic beverage to use in smoothies is coconut water. It typically contains about 500mg of potassium (10% of RDI) per serving (i.e., more than a banana) and tastes delicious. Every day, I like to blend some coconut water, kale (10%), an avacodo (11%), and a banana (6%) with some ice to make a delcious smoothie to get me going. I also tend to add a scoop of a [plant-based coconut-almond protein powder](https://www.iherb.com/pr/vega-one-all-in-one-shake-coconut-almond-1-5-lbs-687-g/81577) (6%) from wholefoods into the mix and the result is just outstanding. Importantly though, a smoothie like this not only gets you to nearly 50% of the RDI for potassium, but also has so many other nutrients to cover your bases in those areas as well which is great. 
+
+The rest of your daily needs can easily be satisfied through healthy snacks like chestnuts or brazilnuts, or through a nice side-salad with your meals (e.g.,Kale, Spinach, Taro leaves, Brussel Sprouts).
+
+
+
+
