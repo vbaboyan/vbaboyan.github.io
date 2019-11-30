@@ -1,0 +1,85 @@
+---
+title: "Adrenal Fatigue"
+author: "Vatché Baboyan"
+date: "11/29/2019"
+output: html_document
+htmlwidgets: TRUE
+---
+
+
+
+## Getting and Cleaning Data
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+
+```r
+#Data Source: https://gist.github.com/syntagmatic/8702807
+blogdir<-"~/Dropbox/Blog/vbaboyan.github.io/"
+setwd(blogdir)
+figdir<-paste(blogdir,"/assets/images/figs",sep = "")
+nutrition<-read.csv("~/Dropbox/Nutrition/USDA_2016.csv",header = T,na.strings = "NULL")
+#names(nutrition)<-gsub(names(nutrition),pattern = "..g.",replacement = "",fixed = T)
+nutr.dset<-nutrition[,4:ncol(nutrition)-1]
+
+#Step 2: EDA - Correlation structure and clustering (optional) #####
+for(col in 1:ncol(nutr.dset)){
+  nutr.dset[,col]<-as.numeric(as.character(nutr.dset[,col]))
+}
+nutr.dset<-nutr.dset[which(colMeans(is.na(nutr.dset))<0.25)]
+cor.mat<-cor(nutr.dset,use = "complete.obs")
+d<-1-cor.mat
+d<-as.dist(d)
+```
+
+<h3> Heatmap
+
+You can also embed plots, for example:
+
+
+```
+RStudioGD 
+        2 
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+<h3> Clustering
+
+
+```r
+hclstrs<-cutree(nutr.hclust,k = 14)
+green.clust<-names(which(hclstrs==6))
+bad.clust<-names(which(hclstrs==3))
+clstrs<-c(green.clust,bad.clust)
+green.clust.dat<-nutr.dset[clstrs]
+green.dset<-cbind(nutrition[,1:2],green.clust.dat)
+```
+
+<h3> normalize values
+
+```r
+green.dset$Fiber..g.<-green.dset$Fiber..g./38
+green.dset$Iron..mg.<-green.dset$Iron..mg./8
+green.dset$Potasssium..mg.<-green.dset$Potasssium..mg./4700
+green.dset$Magnesium..mg.<-green.dset$Magnesium..mg./420
+green.dset$Carbohydrates..g.<-green.dset$Carbohydrates..g./50
+green.dset$Sugar..g.<-green.dset$Sugar..g./50
+```
+
+<h3> remove toxic/bullshit substances as well as non-relevant categories
+
+```r
+bad.rows<-which(green.dset$Potasssium..mg.>0.2 | green.dset$Fiber..g.>0.2 | green.dset$Iron..mg.>0.2 | green.dset$Magnesium..mg.>0.2)
+green.dset<-green.dset[-bad.rows,]
+```
+
+<h3> Potassium Rich Foods
+
+
+
+
+
+

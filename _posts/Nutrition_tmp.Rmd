@@ -1,0 +1,225 @@
+---
+title: "Adrenal Fatigue"
+author: "Vatché Baboyan"
+date: "11/29/2019"
+output: html_document
+htmlwidgets: TRUE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(plotly)
+library(dplyr)
+library(corrplot)
+library(ggdendro)
+library(dendextend)
+library(gplots)
+library(ggplot2)
+library(tm)
+library(wordcloud)
+library(ggwordcloud)
+library(gridExtra)
+library(FactoMineR)
+library(factoextra)
+library(missMDA)
+library(grDevices)
+library(randomcoloR)
+library(ggfortify)
+library(ggthemes)
+```
+
+## Getting and Cleaning Data
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+#Data Source: https://gist.github.com/syntagmatic/8702807
+blogdir<-"~/Dropbox/Blog/vbaboyan.github.io/"
+setwd(blogdir)
+figdir<-paste(blogdir,"/assets/images/figs",sep = "")
+nutrition<-read.csv("~/Dropbox/Nutrition/USDA_2016.csv",header = T,na.strings = "NULL")
+#names(nutrition)<-gsub(names(nutrition),pattern = "..g.",replacement = "",fixed = T)
+nutr.dset<-nutrition[,4:ncol(nutrition)-1]
+
+#Step 2: EDA - Correlation structure and clustering (optional) #####
+for(col in 1:ncol(nutr.dset)){
+  nutr.dset[,col]<-as.numeric(as.character(nutr.dset[,col]))
+}
+nutr.dset<-nutr.dset[which(colMeans(is.na(nutr.dset))<0.25)]
+cor.mat<-cor(nutr.dset,use = "complete.obs")
+d<-1-cor.mat
+d<-as.dist(d)
+```
+
+<h3> Heatmap </h3>
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+getPalette<-distinctColorPalette(k = 14, altCol = T, runTsne = FALSE)
+png(file=paste(figdir,"/Corplot.png",sep = ""),height = 5,width = 8,units="in",res=300)
+par(mfrow=c(1,2),pty="s")
+corrplot(cor.mat,
+         method = "color", outline = F, 
+         addgrid.col = "gray", 
+         #addgrid.col = NA,
+         #addCoef.col = "grey",
+         #type="lower",
+         order="hclust",
+         hclust.method = "ward.D2",
+         addrect = 14, 
+         rect.col = getPalette, 
+         rect.lwd = 2,
+         cl.pos = "b", 
+         tl.col="black", tl.srt=45, tl.cex=.4,cex.main=0.8,
+         title = "Heatmap of Correlations Between Food Contents",mar = c(1,1,0.2,1)
+         #number.cex=0.7
+         )
+
+nutr.hclust<-hclust(d,method = "ward.D2")
+dend<-as.dendrogram(nutr.hclust)
+labels_cex(dend)<-0.5
+dend %>% color_branches(k=14,col = getPalette) %>% color_labels(k=14,col = getPalette,labels_cex) %>% plot(main ="Clustering Solution",asp=5,)
+
+dev.off()
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+<h3> Clustering </h3>
+
+```{r}
+
+hclstrs<-cutree(nutr.hclust,k = 14)
+green.clust<-names(which(hclstrs==6))
+bad.clust<-names(which(hclstrs==3))
+clstrs<-c(green.clust,bad.clust)
+green.clust.dat<-nutr.dset[clstrs]
+green.dset<-cbind(nutrition[,1:2],green.clust.dat)
+```
+
+<h3> normalize values  </h3>
+```{r}
+green.dset$Fiber..g.<-green.dset$Fiber..g./38
+green.dset$Iron..mg.<-green.dset$Iron..mg./8
+green.dset$Potasssium..mg.<-green.dset$Potasssium..mg./4700
+green.dset$Magnesium..mg.<-green.dset$Magnesium..mg./420
+green.dset$Carbohydrates..g.<-green.dset$Carbohydrates..g./50
+green.dset$Sugar..g.<-green.dset$Sugar..g./50
+```
+
+<h3> remove toxic/bullshit substances as well as non-relevant categories  </h3>
+```{r}
+bad.rows<-which(green.dset$Potasssium..mg.>0.2 | green.dset$Fiber..g.>0.2 | green.dset$Iron..mg.>0.2 | green.dset$Magnesium..mg.>0.2)
+green.dset<-green.dset[-bad.rows,]
+```
+
+<h3> Potassium Rich Foods  </h3>
+```{r}
+thresh<-quantile(green.dset$Potasssium..mg.,0.90,na.rm = T)
+green.dset2<-green.dset[green.dset$Potasssium..mg.>thresh,]
+pie.dat<-as.data.frame(table(green.dset2$Food.Group)/sum(table(green.dset2$Food.Group)))
+colnames(pie.dat)<-c("Group","Freq")
+pie.dat<-pie.dat[which(pie.dat$Freq>0.01),]
+pie.labs<-paste(pie.dat$Group," (",round(pie.dat$Freq*100,digits = 1),"%)",sep = "")
+mycols <- adjustcolor(palette(rainbow(nrow(pie.dat))), alpha.f = 0.3)
+opal <- palette(mycols)
+
+#png(file=paste(figdir,"/Pie.png",sep = ""),width = 5,height = 3,units = "in",res=300)
+par(mfrow=c(1,1))
+pie(pie.dat$Freq,labels = pie.labs,radius = 1,col = opal,cex=0.5,main = "The Percentage of High-Potassium Items by Food Category",cex.main=0.6,mar=c(0.2,0.5,0.2,0.5))
+#dev.off()
+```
+
+<h3> Wordclouds  </h3>
+
+```{r}
+
+# remove stupid categories
+good.cats<-unique(green.dset2$Food.Group)[c(5,7,8)]
+green.dset3<-subset(green.dset2,Food.Group %in% good.cats)
+
+#green.dset3<-green.dset3[order(green.pca$scores[,1],decreasing = T),]
+nrow(subset(green.dset3,subset=green.dset3$Food.Group=="Vegetables and Vegetable Products"))
+#wordclouds
+clean_corpus <- function(corpus){
+  corpus <- tm_map(corpus, stripWhitespace)
+  corpus <- tm_map(corpus, removePunctuation)
+  corpus <- tm_map(corpus, content_transformer(tolower))
+  corpus <- tm_map(corpus, removeWords, c(stopwords("en"), "sugar", "without"))
+  return(corpus)
+}
+wc.plot<-function(dset,cat){
+  wc.dset<-dset
+  #wc.dset<-green.dset3
+  wc.dset<-subset(wc.dset,subset = wc.dset$Food.Group==cat)
+  #clean food names
+  wc.dset$Food.Name<-as.character(wc.dset$Food.Name)
+  if(cat=="Nut and Seed Products"){
+    wc.dset$Food.Name<-gsub("with.*","",wc.dset$Food.Name)
+    wc.dset$Food.Name<-gsub("without.*","",wc.dset$Food.Name)
+  }
+  else{wc.dset$Food.Name<-gsub(",.*","",wc.dset$Food.Name)
+  }
+  wc.dset$Food.Name<-as.factor(wc.dset$Food.Name)
+  wc.dset.corpus<-VCorpus(VectorSource(wc.dset$Food.Name))
+  wc.dset.corpus<-clean_corpus(wc.dset.corpus)
+  wc.dset.idf.tdm <-TermDocumentMatrix(wc.dset.corpus, control=list(weighting=weightTfIdf))
+  freq <- slam::row_sums(wc.dset.idf.tdm)
+  words <- names(freq) 
+  wc<-ggwordcloud(words,
+                  scale = c(2,0.3), 
+                  freq,
+                  min.freq = 0,
+                  max.words=400, 
+                  random.order=FALSE, 
+                  rot.per=0.1, 
+                  #random.color=T
+                  colors=brewer.pal(8, "Dark2")
+                  )
+  
+  return(wc)
+}
+
+wc1<-wc.plot(green.dset3,"Nut and Seed Products")
+wc2<-wc.plot(green.dset3,"Fruits and Fruit Juices")
+wc3<-wc.plot(green.dset3,"Vegetables and Vegetable Products")
+wc.plots<-grid.arrange(wc1,wc2,wc3,nrow=2,ncol=2,
+                       layout_matrix = rbind(c(1,2), c(3,3)))
+
+#output<-grid.arrange(wc1,wc2,wc3, ncol=3,widths=1:3, heights=1:3)
+
+#edit the filename
+ggsave(paste(figdir,"/wordclouds2.pdf",sep = ""),wc.plots,width =10,height = 7,dpi = 300,useDingbats=FALSE)
+
+```
+
+<h3>PCA  </h3>
+```{r}
+nb<-estim_ncpPCA(green.dset3[,3:6],ncp.max = 4)
+res.comp<-imputePCA(green.dset3[,3:6],ncp=2)
+green.pca<-princomp(res.comp$completeObs,scores = T)
+sorted.pca<-sort(green.pca$scores,decreasing = T)
+green.pca2<-data.frame(green.pca$scores)
+green.pca2<-green.pca2[order(green.pca2$Comp.1,decreasing = T),]
+#green.pca2<-green.pca2[1:50,]
+green.pca2$Name<-green.dset3[row.names(green.pca2),2]
+green.pca2$Group<-green.dset3[row.names(green.pca2),1]
+green.pca2<-cbind(green.pca2,green.dset3[row.names(green.pca2),3:8])
+plot<-ggplot(green.pca2,aes(Comp.1,Comp.2,colour=Group))+
+  geom_point(aes(text=paste(
+    "Name: ",Name,"<br>",
+    "Potassium: ",round(Potasssium..mg.*100,digits = 2),"%<br>",
+    "Magnesium: ",round(Magnesium..mg.*100,digits = 2),"%<br>",
+    "Iron: ",round(Iron..mg.*100,digits = 2),"%<br>",
+    "Fiber: ",round(Fiber..g.*100,digits = 2),"%<br>",
+    "Sugar: ",round(Sugar..g.*100,digits = 2),"%<br>",
+    sep="")),size=3)+
+  theme_wsj()
+
+ggplotly(plot)
+
+```
+
