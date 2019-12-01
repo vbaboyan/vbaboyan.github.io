@@ -16,9 +16,6 @@ intro:
   - excerpt: 'Welcome to my Personal Webpage'
 feature_row:
   - image_path: assets/images/splash/unsplash1.jpg
-  actions:
-    - label: "About"
-       url: /about/
     #alt: "placeholder image 1"
     #title: "About"
     excerpt: "An informal introduction."
@@ -46,6 +43,10 @@ feature_row:
 {% include feature_row id="intro" type="center" %}
 
 {% include feature_row %}
+
+{% for post in site.posts %}
+    {% include archive-single.html %}
+{% endfor %}
 
 <!-- {% include feature_row id="feature_row" type="left" %}
 {% include feature_row id="feature_row2" type="right" %}
