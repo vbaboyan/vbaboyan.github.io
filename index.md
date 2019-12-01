@@ -18,23 +18,23 @@ feature_row:
   - image_path: assets/images/splash/unsplash1.jpg
     #alt: "placeholder image 1"
     #title: "About"
-    excerpt: "A little about me..."
+    excerpt: "A little about me."
     url: /about/
     btn_label: "About"
     btn_class: "btn--primary"
-feature_row2:
+#feature_row2:
   - image_path: assets/images/splash/unsplash2.jpg
     #image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
     #alt: "Blog"
     #title: "Blog"
-    excerpt: "Check out some of my recent blog posts here.."
+    excerpt: "Some of my recent blog posts here.."
     url: /blog/
-    btn_label: "Blog"
+    btn_label: "Read More"
     btn_class: "btn--primary"
-feature_row3:
+#feature_row3:
   - image_path: assets/images/splash/unsplash3.jpg
     #title: "CV"
-    excerpt: "A formal introduction..."
+    excerpt: "A formal introduction."
     url: /CV/
     btn_label: "CV"
     btn_class: "btn--primary"
@@ -42,8 +42,10 @@ feature_row3:
 
 {% include feature_row id="intro" type="center" %}
 
-{% include feature_row id="feature_row" type="left" %}
+{% include feature_row %}
 
-{% include feature_row id="feature_row2" type="right" %}
+#{% include feature_row id="feature_row" type="left" %}
 
-{% include feature_row id="feature_row3" type="left" %}
+#{% include feature_row id="feature_row2" type="right" %}
+
+#{% include feature_row id="feature_row3" type="left" %}
