@@ -37,7 +37,7 @@ feature_row:
     excerpt: "A formal introduction."
     url: /CV/
     btn_label: "CV"
-    btn_class: "btn--primary"
+    btn_class: "btn--inverse"
 ---
 
 {% include feature_row id="intro" type="center" %}
