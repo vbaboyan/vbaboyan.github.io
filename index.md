@@ -19,7 +19,7 @@ feature_row:
     alt: "placeholder image 1"
     title: "About"
     #excerpt: "This is some sample content that goes here with **Markdown** formatting."
-  - image_path: [assets/images/splash/unsplash2.jpg](/blog/)
+  - image_path: assets/images/splash/unsplash2.jpg
     image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
     alt: "placeholder image 2"
     title: "Blog"
