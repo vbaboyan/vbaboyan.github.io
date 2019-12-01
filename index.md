@@ -14,6 +14,8 @@ header:
 #excerpt: "Bacon ipsum dolor sit amet salami ham hock ham, hamburger corned beef short ribs kielbasa biltong t-bone drumstick tri-tip tail sirloin pork chop."
 intro:
   - excerpt: 'Welcome to my Personal Webpage'
+Blog_intro:
+  - excerpt: 'Recent Blog Posts'
 feature_row:
   - image_path: assets/images/splash/unsplash1.jpg
     #alt: "placeholder image 1"
@@ -43,6 +45,8 @@ feature_row:
 {% include feature_row id="intro" type="center" %}
 
 {% include feature_row %}
+
+{% include feature_row id="Blog_intro" type="center" %}
 
 {% for post in site.posts %}
     {% include archive-single.html %}
