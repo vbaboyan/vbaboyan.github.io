@@ -109,13 +109,11 @@ green.dset$Carbohydrates..g.<-green.dset$Carbohydrates..g./50
 green.dset$Sugar..g.<-green.dset$Sugar..g./50
 ```
 
-```{r}
+```{r echo=FALSE,fig.width =7,fig.height =5,fig.align="center"}
 #remove toxic/bullshit substances as well as non-relevant categories  
 bad.rows<-which(green.dset$Potasssium..mg.>0.2 | green.dset$Fiber..g.>0.2 | green.dset$Iron..mg.>0.2 | green.dset$Magnesium..mg.>0.2)
 green.dset<-green.dset[-bad.rows,]
-```
 
-```{r echo=FALSE,fig.width =7,fig.height =5,fig.align="center"}
 #Potassium Rich Foods
 thresh<-quantile(green.dset$Potasssium..mg.,0.90,na.rm = T)
 green.dset2<-green.dset[green.dset$Potasssium..mg.>thresh,]
@@ -126,10 +124,9 @@ pie.labs<-paste(pie.dat$Group," (",round(pie.dat$Freq*100,digits = 1),"%)",sep =
 mycols <- adjustcolor(palette(rainbow(nrow(pie.dat))), alpha.f = 0.3)
 opal <- palette(mycols)
 
-#png(file=paste(figdir,"/Pie.png",sep = ""),width = 5,height = 3,units = "in",res=300)
 par(mfrow=c(1,1))
 pie(pie.dat$Freq,labels = pie.labs,radius = .9,col = opal,cex=.6,main = "The Percentage of High-Potassium Items by Food Category",cex.main=1,mar=c(1,1,1,1))
-#dev.off()
+
 ```
 
 If we're interested in making a dietary recommendation, I think it's easiest to work with products that can be easily thrown into a blender for a smoothie. So let's look at the following 3 categories: (1) Nut and Nut products, (2) Fruits and Fruit Juices, (3) and Vegetable and Vegetable products. What are some products that fall into this category of high-potassium foods? We can use a "Word Cloud" to visualize the most common words found in these foods items, after removing those that fall out side of the 10-20% RDI range. Here's what that looks like for each of the 3 categories of interest:
