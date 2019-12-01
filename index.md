@@ -18,18 +18,18 @@ feature_row:
   - image_path: assets/images/splash/unsplash1.jpg
     alt: "placeholder image 1"
     title: "About"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-  - image_path: assets/images/splash/unsplash2.jpg
+    #excerpt: "This is some sample content that goes here with **Markdown** formatting."
+  - image_path: [assets/images/splash/unsplash2.jpg](/blog/)
     image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
     alt: "placeholder image 2"
     title: "Blog"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    #excerpt: "This is some sample content that goes here with **Markdown** formatting."
     url: /blog/
     btn_label: "Archive"
     btn_class: "btn--primary"
   - image_path: assets/images/splash/unsplash3.jpg
     title: "CV"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    #excerpt: "This is some sample content that goes here with **Markdown** formatting."
 ---
 
 {% include feature_row id="intro" type="center" %}
