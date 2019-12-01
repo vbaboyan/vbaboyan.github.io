@@ -16,22 +16,28 @@ intro:
   - excerpt: 'Welcome to my Personal Webpage'
 feature_row:
   - image_path: assets/images/splash/unsplash1.jpg
-    alt: "placeholder image 1"
+    #alt: "placeholder image 1"
     title: "About"
-    #excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    excerpt: "An informal introduction..."
+feature_row2:
   - image_path: assets/images/splash/unsplash2.jpg
-    image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
-    alt: "placeholder image 2"
+    #image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
+    #alt: "Blog"
     title: "Blog"
-    #excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    excerpt: "Check out some of my recent blog posts here.."
     url: /blog/
     btn_label: "Archive"
     btn_class: "btn--primary"
+feature_row3:
   - image_path: assets/images/splash/unsplash3.jpg
     title: "CV"
-    #excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    excerpt: "A formal introduction..."
 ---
 
 {% include feature_row id="intro" type="center" %}
 
-{% include feature_row %}
+{% include feature_row id="feature_row" type="left" %}
+
+{% include feature_row id="feature_row2" type="right" %}
+
+{% include feature_row id="feature_row3" type="center" %}
