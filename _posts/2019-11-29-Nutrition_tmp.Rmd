@@ -4,6 +4,7 @@ title: "Potassium Deficiency and Adrenal Function"
 #date: "11/29/2019"
 output: html_document
 htmlwidgets: TRUE
+excerpt: "A data science approach"
 ---
 
 ```{r setup, include=FALSE}
