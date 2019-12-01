@@ -18,7 +18,7 @@ feature_row:
   - image_path: assets/images/splash/unsplash1.jpg
     #alt: "placeholder image 1"
     #title: "About"
-    excerpt: "A little about me."
+    excerpt: "An informal introduction."
     url: /about/
     btn_label: "About"
     btn_class: "btn--primary"
@@ -27,7 +27,7 @@ feature_row:
     #image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
     #alt: "Blog"
     #title: "Blog"
-    excerpt: "Some of my recent blog posts here.."
+    excerpt: "Recent blog posts."
     url: /blog/
     btn_label: "Read More"
     btn_class: "btn--primary"
@@ -44,8 +44,6 @@ feature_row:
 
 {% include feature_row %}
 
-#{% include feature_row id="feature_row" type="left" %}
-
-#{% include feature_row id="feature_row2" type="right" %}
-
-#{% include feature_row id="feature_row3" type="left" %}
+<!-- {% include feature_row id="feature_row" type="left" %}
+{% include feature_row id="feature_row2" type="right" %}
+{% include feature_row id="feature_row3" type="left" %} -->
