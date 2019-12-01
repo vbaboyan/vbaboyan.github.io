@@ -293,7 +293,7 @@ defaults:
       share: true
       related: true
       header:
-        image: "/assets/images/splash/Header.png"
+        image: "/assets/images/splash/Connectomics.png"
 
   # _posts
   - scope:
@@ -303,4 +303,4 @@ defaults:
       layout: single
       author_profile: true
       header:
-        image: "/assets/images/splash/Header.png"
+        image: "/assets/images/splash/Connectomics.png"
