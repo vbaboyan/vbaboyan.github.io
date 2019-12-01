@@ -1,10 +1,10 @@
 ---
-title: "Potassium Deficiency and Adrenal Function"
+title: "Potassium and Adrenal Function"
 #author: "Vatché Baboyan"
 #date: "11/29/2019"
 output: html_document
 htmlwidgets: TRUE
-excerpt: "A data science approach"
+excerpt: "Using data to approach the recommended daily intake."
 ---
 
 ```{r setup, include=FALSE}
