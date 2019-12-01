@@ -16,6 +16,9 @@ intro:
   - excerpt: 'Welcome to my Personal Webpage'
 feature_row:
   - image_path: assets/images/splash/unsplash1.jpg
+  actions:
+    - label: "About"
+       url: /about/
     #alt: "placeholder image 1"
     #title: "About"
     excerpt: "An informal introduction."
@@ -37,7 +40,7 @@ feature_row:
     excerpt: "A formal introduction."
     url: /CV/
     btn_label: "CV"
-    btn_class: "btn--inverse"
+    btn_class: "btn--primary"
 ---
 
 {% include feature_row id="intro" type="center" %}
