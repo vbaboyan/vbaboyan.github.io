@@ -14,7 +14,3 @@ In my spare time, you can spot me watching NBA games, at the gym boxing or weigh
 >"“And those who were seen dancing were thought to be insane by those who could not hear the music.” - Friedrich Nietzsche
 
 Thanks for visiting my page and feel free to get in contact with me through any of the links provided.
-
-<p align="center">
-<img src="{{ site.url }}{{site.baseurl }}/assets/images/figs/Connectomics.png" alt="Structural Connectomics" width="300" height="300" >
-</p>
