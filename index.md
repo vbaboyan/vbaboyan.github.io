@@ -13,10 +13,10 @@ feature_row:
 {% include feature_row id="feature_row" type="center" %}
 
 <!-- <style> .indented { padding-left: 35pt; padding-right: 35pt; } </style> -->
-<div style="text-align:center">
+<div style="text-align:justify">
 <!-- <div class="indented"> -->
 <p>
-Thanks for visiting my webpage! I'm currently a doctoral candidate in the Auditory & Language Neuroscience Lab at UC Irvine. My research interests are in studying the neurobiology of language using modern brain imaging tools. As of December 2019, I will be working for a med-tech startup based out of Toronto, <a href="https://www.synaptivemedical.com/" target="_blank"> Synaptive Medical </a>, that is dedicated to using data and robotics to help improve neurosurgical patient outcomes. For more information about me, visit my bio or take a look at my CV. Otherwise, i've dedicated this page to sharing ideas about life through my blog page. Thanks for stopping by and feel free to get in contact with me through any of the links provided.
+Thanks for visiting my webpage! I'm currently a doctoral candidate in the Auditory & Language Neuroscience Lab at UC Irvine. My research interests are in studying the neurobiology of language using modern brain imaging tools. I've just recently accepted an offer to work for a fantastic med-tech startup based out of Toronto, <a href="https://www.synaptivemedical.com/" target="_blank"> Synaptive Medical </a>, that is dedicated to using data and robotics to help improve patient outcomes by streamlining the neurosurgical workflow. For more information about me, you can visit my bio or even take a look at my CV. Otherwise, i've dedicated this page to sharing ideas about life through the dedicated blog page. Thanks for stopping by and feel free to get in contact with me through any of the links provided.
 </p>
 </div>
 
