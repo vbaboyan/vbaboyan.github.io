@@ -17,6 +17,11 @@ I'm a doctoral candidate at UC Irvine where i've been studying the neurobiology 
 </p>
 </div>
 
+<br>
+<br>
+<br>
+<br>
+
 <div style="text-align:left">
 <H1> Recent Blog Posts </H1>
 
