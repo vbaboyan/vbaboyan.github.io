@@ -4,7 +4,7 @@ layout: home
 author_profile: true
 ---
 
-<style> .indented { padding-left: 50pt; padding-right: 50pt; } </style>
+<style> .indented { padding-left: 10pt; padding-right: 10pt; } </style>
 <img src="{{ site.url }}{{site.baseurl }}assets/images/splash/Connectomics.png" alt="Connectomics">
 <div style="text-align:center">
 <div class="indented">
