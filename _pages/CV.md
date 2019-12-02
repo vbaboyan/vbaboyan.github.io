@@ -4,6 +4,8 @@ layout: single
 #excerpt: "This page is under construction. Please check back later"
 sitemap: false
 permalink: /CV/
+header:
+  image: #"/assets/images/splash/Connectomics.png"
 ---
 <p style="text-align: center;">
 Curriculum Vitae (Current as of, Sept 2019)
