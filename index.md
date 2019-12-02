@@ -14,7 +14,7 @@ header:
   #caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 #excerpt: "Bacon ipsum dolor sit amet salami ham hock ham, hamburger corned beef short ribs kielbasa biltong t-bone drumstick tri-tip tail sirloin pork chop."
 intro:
-  - excerpt: 'Welcome to my Personal Webpage. I'm a doctoral candidate in the Auditory & Language Neuroscience lab at UC Irvine, interested in the neurobiology of language. My current advisor is Dr. Gregory Hickok, and my research relies on clinical data made available through a variety of different collaborations. I have recently accepted a position working full time for an awesome biomedical tech startup called Synaptive Medical.'
+  - excerpt: 'Welcome to my Personal Webpage. I'm a doctoral candidate at UC Irvine where i've been studying the neurobiology of human language using Magnetic Resonance Imaging. In addition, as of December 2019, I will be working full-time for a fantastic medical technology startup, Synaptive Medical, whose principal aim is to improve neurosurgical patient outcomes using cutting edge imaging and robotics platforms in the operating room.'
 Blog_intro:
   - excerpt: 'Recent Blog Posts'
 feature_row:
