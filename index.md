@@ -7,8 +7,8 @@ header:
   image: "/assets/images/splash/Connectomics.png"
 intro:
   #- excerpt: ''
-Blog_intro:
-  - excerpt: 'Recent Blog Posts'
+#Blog_intro:
+#  - excerpt: 'Recent Blog Posts'
 #feature_row:
 #  - image_path: assets/images/splash/unsplash1.jpg
 #    excerpt: "An informal introduction."
@@ -38,7 +38,9 @@ Welcome to my personal webpage. I'm a doctoral candidate at UC Irvine where i've
 </p>
 </div>
 
-{% include feature_row %}
+<!-- {% include feature_row %} -->
+<div style="text-align:left">
+<HR> Recent Blog Posts </HR>
 
 {% include feature_row id="Blog_intro" type="center" %}
 
