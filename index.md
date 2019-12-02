@@ -38,11 +38,9 @@ Welcome to my personal webpage. I'm a doctoral candidate at UC Irvine where i've
 </p>
 </div>
 
-<!-- {% include feature_row %} -->
-<div style="text-align:left">
-<HR> Recent Blog Posts </HR>
+## Recent Blog Posts
 
-{% include feature_row id="Blog_intro" type="center" %}
+<!-- {% include feature_row id="Blog_intro" type="center" %} -->
 
 {% for post in site.posts %}
     {% include archive-single.html %}
