@@ -3,6 +3,7 @@ output: html_document
 layout: post
 tags: nutrition,data science, r
 htmlwidgets: TRUE
+excerpt: A data science approach to nutrition.
 ---
 
 ```{r setup, include=FALSE}
