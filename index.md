@@ -41,13 +41,14 @@ Welcome to my personal webpage. I'm a doctoral candidate at UC Irvine where i've
 
 <div style="text-align:left">
 <H1> Recent Blog Posts </H1>
-</div>
 
 <!-- {% include feature_row id="Blog_intro" type="center" %} -->
 
 {% for post in site.posts %}
     {% include archive-single.html %}
 {% endfor %}
+
+</div>
 
 <!-- {% include feature_row id="feature_row" type="left" %}
 {% include feature_row id="feature_row2" type="right" %}
