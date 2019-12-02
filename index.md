@@ -1,12 +1,11 @@
 ---
 #title: "Splash Page"
-layout: home
-author_profile: false
+layout: splash
 ---
 
+<img src="{{ site.url }}{{site.baseurl }}assets/images/splash/Connectomics.png" alt="Connectomics" class="center">
 <style> .indented { padding-left: 10pt; padding-right: 10pt; } </style>
 <div style="text-align:center">
-<img src="{{ site.url }}{{site.baseurl }}assets/images/splash/Connectomics.png" alt="Connectomics">
 <div class="indented">
 <p>
 Welcome to my personal webpage! <br> I'm a doctoral candidate at UC Irvine where i've been studying the neurobiology of human language using Magnetic Resonance Imaging.In addition, as of December 2019, I will be working full-time for a bio-tech/med-tech startup, <a href="https://www.synaptivemedical.com/" target="_blank"> Synaptive Medical </a>, whose principal aim is to improve neurosurgical patient outcomes using cutting-edge imaging, navigation, and robotics platforms in the operating room.
