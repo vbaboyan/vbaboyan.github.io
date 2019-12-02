@@ -28,9 +28,9 @@ feature_row:
 ---
 
 <!-- {% include feature_row id="intro" type="center" %} -->
-<center>
+<div style="text-align: justify">
 Welcome to my personal webpage. I'm a doctoral candidate at UC Irvine where i've been studying the neurobiology of human language using Magnetic Resonance Imaging. In addition, as of December 2019, I will be working full-time for a bio-tech/med-tech startup, [Synaptive Medical](https://www.synaptivemedical.com/), whose principal aim is to improve neurosurgical patient outcomes using cutting-edge imaging, navigation, and robotics platforms in the operating room.
-</center>
+</div>
 
 {% include feature_row %}
 
