@@ -7,7 +7,7 @@ author_profile: true
 header:
   image: "/assets/images/splash/Connectomics.png"
 intro:
-  - excerpt: 'Welcome to my Personal Webpage. I'm a doctoral candidate at UC Irvine where i've been studying the neurobiology of human language using Magnetic Resonance Imaging. In addition, as of December 2019, I will be working full-time for a fantastic medical technology startup, Synaptive Medical, whose principal aim is to improve neurosurgical patient outcomes using cutting edge imaging and robotics platforms in the operating room.'
+  - excerpt: 'Welcome to my Personal Webpage.'
 Blog_intro:
   - excerpt: 'Recent Blog Posts'
 feature_row:
@@ -41,3 +41,5 @@ feature_row:
 <!-- {% include feature_row id="feature_row" type="left" %}
 {% include feature_row id="feature_row2" type="right" %}
 {% include feature_row id="feature_row3" type="left" %} -->
+
+<!-- 'I'm a doctoral candidate at UC Irvine where i've been studying the neurobiology of human language using Magnetic Resonance Imaging. In addition, as of December 2019, I will be working full-time for a fantastic medical technology startup, Synaptive Medical, whose principal aim is to improve neurosurgical patient outcomes using cutting edge imaging and robotics platforms in the operating room.' -->
