@@ -8,8 +8,6 @@ feature_row:
     title: "Welcome • Բարի Գալուստ • أهلا وسهلا"
     #excerpt: "Welcome To My Personal Webpage!"
 ---
-<br>
-<br>
 {% include feature_row id="feature_row" type="center" %}
 
 <!-- <style> .indented { padding-left: 35pt; padding-right: 35pt; } </style> -->
