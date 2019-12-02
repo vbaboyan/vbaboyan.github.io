@@ -1,14 +1,19 @@
 ---
 #title: "Splash Page"
 layout: splash
-header:
-image: "/assets/images/Main_Diagram.png"
+feature_row:
+  - image_path: assets/images/Main_Diagram.png
+    alt: "Baboyan Connectomics"
+    #title: "Connectomics"
+    excerpt: "Welcome to my Personal Webpage"
 ---
+{% include feature_row id="feature_row" type="center" %}
+
 <style> .indented { padding-left: 20pt; padding-right: 20pt; } </style>
 <div style="text-align:center">
 <div class="indented">
 <p>
-Welcome to my personal webpage! <br> I'm a doctoral candidate at UC Irvine where i've been studying the neurobiology of human language using Magnetic Resonance Imaging. As of December 2019, I will be working for <a href="https://www.synaptivemedical.com/" target="_blank"> Synaptive Medical </a> -  as a Clinical Applications Specialist. Synaptive is a bio-tech startup based out of Toronto whose principal aim is to improve neurosurgical patient outcomes using cutting-edge imaging, navigation, and robotics platforms in the operating room.
+I'm a doctoral candidate at UC Irvine where i've been studying the neurobiology of human language using Magnetic Resonance Imaging. As of December 2019, I will be working for <a href="https://www.synaptivemedical.com/" target="_blank"> Synaptive Medical </a> -  as a Clinical Applications Specialist. Synaptive is a bio-tech startup based out of Toronto whose principal aim is to improve neurosurgical patient outcomes using cutting-edge imaging, navigation, and robotics platforms in the operating room.
 </p>
 </div>
 
