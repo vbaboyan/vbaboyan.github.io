@@ -28,10 +28,11 @@ feature_row:
 ---
 
 <!-- {% include feature_row id="intro" type="center" %} -->
-<div style="text-align: justify">
-Welcome to my personal webpage. <br/> I'm a doctoral candidate at UC Irvine where i've been studying the neurobiology of human language using Magnetic Resonance Imaging.  <br/> In addition, as of December 2019, I will be working full-time for a bio-tech/med-tech startup, [Synaptive Medical](https://www.synaptivemedical.com/), whose principal aim is to improve neurosurgical patient outcomes using cutting-edge imaging, navigation, and robotics platforms in the operating room.
-</div>
-
+<!-- <div style="text-align: justify"> -->
+<p>
+Welcome to my personal webpage. I'm a doctoral candidate at UC Irvine where i've been studying the neurobiology of human language using Magnetic Resonance Imaging.In addition, as of December 2019, I will be working full-time for a bio-tech/med-tech startup, <a href="https://www.synaptivemedical.com/" target="_blank"> Synaptive Medical </a>, whose principal aim is to improve neurosurgical patient outcomes using cutting-edge imaging, navigation, and robotics platforms in the operating room.
+</p>
+  
 {% include feature_row %}
 
 {% include feature_row id="Blog_intro" type="center" %}
