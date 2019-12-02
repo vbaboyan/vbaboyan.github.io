@@ -29,13 +29,14 @@ feature_row:
 
 <!-- {% include feature_row id="intro" type="center" %} -->
 <!-- <div style="text-align: justify"> -->
+<style> .indented { padding-left: 50pt; padding-right: 50pt; } </style>
 
-<style>   
-<P ALIGN=CENTER>
+<div style="text-align:center">
+<div class="indented">
+<p>
 Welcome to my personal webpage. I'm a doctoral candidate at UC Irvine where i've been studying the neurobiology of human language using Magnetic Resonance Imaging.In addition, as of December 2019, I will be working full-time for a bio-tech/med-tech startup, <a href="https://www.synaptivemedical.com/" target="_blank"> Synaptive Medical </a>, whose principal aim is to improve neurosurgical patient outcomes using cutting-edge imaging, navigation, and robotics platforms in the operating room.
 </p>
-{ padding-left: 100px; padding-right: 100px; }
-</style>
+</div>
 
 {% include feature_row %}
 
