@@ -3,8 +3,8 @@ main:
   - title: "BLOG"
     #url: /blog/ #use this when ready to publish blog archive
     url: /Under_Construction_blog/
-  - title: "PROJECTS"
-    url: /Under_Construction_projects/
+  #- title: "PROJECTS"
+  #  url: /Under_Construction_projects/
   - title: "CV"
     #url: /assets/pdfs/VBaboyan_Resume_OFC.pdf
     url: /CV/
