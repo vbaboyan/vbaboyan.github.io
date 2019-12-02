@@ -1,11 +1,8 @@
 ---
-title: "Potassium and Adrenal Function"
 output: html_document
 layout: post
-date: 'Nov 30, 2019'
-tags: [nutrition,data science, r]
+tags: nutrition,data science, r
 htmlwidgets: TRUE
-#excerpt: "A data science approach to the recommended daily intake."
 ---
 
 ```{r setup, include=FALSE}
