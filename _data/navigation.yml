@@ -8,8 +8,8 @@ main:
   - title: "CV"
     #url: /assets/pdfs/VBaboyan_Resume_OFC.pdf
     url: /CV/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+   - title: "ABOUT"
+     url: /about/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
