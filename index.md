@@ -1,9 +1,11 @@
 ---
 #title: "Splash Page"
 layout: splash
+header:
+image: "/assets/images/Main_Diagram.png"
 ---
 
-<img src="{{ site.url}}{{site.baseurl}}assets/images/Main_Diagram.png" alt="Connectomics" class="center">
+#<img src="{{ site.url}}{{site.baseurl}}assets/images/Main_Diagram.png" alt="Connectomics" class="center">
 <style> .indented { padding-left: 20pt; padding-right: 20pt; } </style>
 <div style="text-align:center">
 <div class="indented">
