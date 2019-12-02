@@ -8,7 +8,7 @@ main:
   - title: "CV"
     #url: /assets/pdfs/VBaboyan_Resume_OFC.pdf
     url: /CV/
-   - title: "ABOUT"
+  - title: "ABOUT"
      url: /about/
   # - title: "Sample Posts"
   #   url: /year-archive/
