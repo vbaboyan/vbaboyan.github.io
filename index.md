@@ -2,15 +2,10 @@
 #title: "Splash Page"
 layout: home
 author_profile: true
-header:
-  image: "/assets/images/splash/Connectomics.png"
-intro:
 ---
 
-<!-- {% include feature_row id="intro" type="center" %} -->
-<!-- <div style="text-align: justify"> -->
 <style> .indented { padding-left: 50pt; padding-right: 50pt; } </style>
-
+<img src="{{ site.url }}{{site.baseurl }}assets/images/splash/Connectomics.png" alt="Connectomics">
 <div style="text-align:center">
 <div class="indented">
 <p>
@@ -28,7 +23,3 @@ Welcome to my personal webpage. I'm a doctoral candidate at UC Irvine where i've
 {% endfor %}
 
 </div>
-
-<!-- {% include feature_row id="feature_row" type="left" %}
-{% include feature_row id="feature_row2" type="right" %}
-{% include feature_row id="feature_row3" type="left" %} -->
