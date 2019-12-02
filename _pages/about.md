@@ -12,5 +12,3 @@ I'd say this space is generally dedicated to not only showcasing my research fin
 In my spare time, you can spot me watching NBA games, at the gym boxing or weightlifting, traveling, resisting black licorice temptations, or scouring the internet for records to add to my vinyl collection. The musical genre I enjoy most is electronica especially with highly melodic and worldly elements. My favorite producers are [Nicolas Jaar (CL/US)](https://youtu.be/PAAUqBghiVo), [David August (DE)](https://youtu.be/cwL_CIhS9Qs), [Satori (NL)](https://www.youtube.com/watch?v=72owSWU1xIM), and [Viken Arman (AM/FR)](https://youtu.be/j_npZfZmRiM).
 
 >"“And those who were seen dancing were thought to be insane by those who could not hear the music.” - Friedrich Nietzsche
-
-Thanks for visiting my page and feel free to get in contact with me through any of the links provided.
