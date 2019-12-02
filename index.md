@@ -6,7 +6,7 @@ layout: splash
 header:
   image: "/assets/images/splash/Connectomics.png"
 intro:
-  - excerpt: 'Welcome to my Personal Webpage.'
+  - excerpt: 'Welcome to my Personal Webpage. I'm a doctoral candidate at UC Irvine where i've been studying the neurobiology of human language using Magnetic Resonance Imaging. In addition, as of December 2019, I will be working full-time for a fantastic medical technology startup, Synaptive Medical, whose principal aim is to improve neurosurgical patient outcomes using cutting edge imaging and robotics platforms in the operating room.'
 Blog_intro:
   - excerpt: 'Recent Blog Posts'
 feature_row:
@@ -31,7 +31,7 @@ feature_row:
 
 {% include feature_row %}
 
-{% include feature_row id="Blog_intro" type="left" %}
+{% include feature_row id="Blog_intro" type="center" %}
 
 {% for post in site.posts %}
     {% include archive-single.html %}
