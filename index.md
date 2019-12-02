@@ -4,7 +4,7 @@ layout: splash
 feature_row:
   - image_path: assets/images/Main_Diagram.png
     alt: "Baboyan Connectomics"
-    image_caption: "The Structural Connectome of the Human Frontal Lobe."
+    image_caption: <center> "The Structural Connectome of the Human Frontal Lobe." </center>
     #title: "Connectomics"
     #excerpt: "Welcome To My Personal Webpage!"
 ---
