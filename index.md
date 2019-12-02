@@ -7,6 +7,10 @@ feature_row:
     #title: "Connectomics"
     #excerpt: "Welcome To My Personal Webpage!"
 ---
+<br>
+<br>
+<br>
+<br>
 {% include feature_row id="feature_row" type="center" %}
 
 <style> .indented { padding-left: 35pt; padding-right: 35pt; } </style>
