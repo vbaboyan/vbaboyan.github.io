@@ -1,12 +1,13 @@
 # main links
 main:
+  - title: "ABOUT"
+    url: /about/
   - title: "BLOG"
     #url: /blog/ #use this when ready to publish blog archive
     url: /Under_Construction_blog/
   - title: "CV"
     url: /CV/
-  - title: "ABOUT"
-    url: /about/
+
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"

@@ -3,8 +3,8 @@
 layout: splash
 ---
 
-<img src="{{ site.url }}{{site.baseurl }}assets/images/splash/Connectomics.png" alt="Connectomics" class="center">
-<style> .indented { padding-left: 40pt; padding-right: 40pt; } </style>
+<img src="{{ site.url}}{{site.baseurl}}assets/images/Main_Diagram.png" alt="Connectomics" class="center">
+<style> .indented { padding-left: 20pt; padding-right: 20pt; } </style>
 <div style="text-align:center">
 <div class="indented">
 <p>
