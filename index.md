@@ -5,11 +5,11 @@ feature_row:
   - image_path: assets/images/Main_Diagram.png
     alt: "Baboyan Connectomics"
     #title: "Connectomics"
-    excerpt: "Welcome to my Personal Webpage"
+    #excerpt: "Welcome To My Personal Webpage!"
 ---
 {% include feature_row id="feature_row" type="center" %}
 
-<style> .indented { padding-left: 20pt; padding-right: 20pt; } </style>
+<style> .indented { padding-left: 35pt; padding-right: 35pt; } </style>
 <div style="text-align:center">
 <div class="indented">
 <p>
