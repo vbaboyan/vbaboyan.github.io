@@ -15,4 +15,4 @@ header:
 
 <div style="text-align:left">
 <H1> In Progress </H1>
-The relationship between handedness, language, and schizophrenia: insights from cerebral asymmetries. Please check back later :)
+Handedness, Language, and Schizophrenia: Insights From Cerebral Asymmetries. Please check back later...
