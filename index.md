@@ -21,9 +21,6 @@ Thanks for visiting my webpage! I'm currently a doctoral candidate in the Audito
 </div>
 
 <br>
-<br>
-<br>
-<br>
 
 <div style="text-align:left">
 <H1> Recent Blog Posts </H1>
