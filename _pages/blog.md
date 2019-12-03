@@ -15,4 +15,4 @@ header:
 
 <div style="text-align:left">
 <H1> In Progress </H1>
-A string theory of Schizophrenia, Handedness, and Language. Please check back later :)
+The relationship between handedness, language, and schizophrenia: insights from cerebral asymmetries. Please check back later :)
