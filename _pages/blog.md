@@ -14,8 +14,7 @@ header:
 {% endfor %}
 
 <div style="text-align:left">
-<H1> In Progress (Check Back Later...)</H1>
+<H1> In Progress (Check Back Later.) </H1>
 <ul>
 <li> Handedness, Language, and Schizophrenia: Insights From Cerebral Asymmetries. (Expected: In January) <br>
 <li> Quantified Self: My Solution to Personalized Health & Fitness Tracking  (Expected: In December)
-</ul>
