@@ -15,5 +15,5 @@ header:
 
 <div style="text-align:left">
 <H1> In Progress (Check Back Later...)</H1>
-1. Handedness, Language, and Schizophrenia: Insights From Cerebral Asymmetries. (Expected: In January)
+1. Handedness, Language, and Schizophrenia: Insights From Cerebral Asymmetries. (Expected: In January) <br>
 2. Quantified Self: My Solution to Personalized Health & Fitness Tracking  (Expected: In December)
