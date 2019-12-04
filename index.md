@@ -20,6 +20,8 @@ Thanks for visiting my webpage! I'm currently a doctoral candidate in the Audito
 
 {% include author-profile.html %}
 
+<br>
+
 <div style="text-align:left">
 <H1> Recent Blog Posts </H1>
 
