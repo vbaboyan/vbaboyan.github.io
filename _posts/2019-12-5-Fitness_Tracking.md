@@ -1,8 +1,8 @@
 ---
-title: "Taking the quantified self into fitness tracking."
+title: "Quantified Self: Fitness Tracking."
 date: 2019-11-10
 tags: [quantified self,fitness,nutrition, data]
-excerpt: "A place to keep helpful r markdown code"
+excerpt: "A year's worth of results."
 ---
 
 About a year ago, I decided to make some changes to my lifestyle. I had noticed that grad school had really disrupted my sleep/wake cycles and my nutrition. By my 4th year of grad school, I was weighing just under 220 lbs - the heaviest I had ever been. Something needed to give. With the recent rise of quality wearable devices and smart products, I thought it'd be the perfect time to embark on a data-driven journey into sleep and fitness tracking.
@@ -14,7 +14,9 @@ Back then, I ended up going with the FitBit Charge 3 device considering it had t
 <img src="{{ site.url }}{{site.baseurl }}/assets/images/Fitbit.png" alt="Fitbit Trends">
 
 Now this is what i'm talking about! The ideal plot in this situation would be a decreasing curve that tapers off after reaching stability. I'd say this is pretty close. So a year later, I weight right about 190lbs and look/feel as good as i've ever been thanks to these fantastic technologies guiding the way. If you haven't already, i'd highly consider adding complementary technologies like this into your life. Here's what the smart scale looks like when I step on it:
-<img src="{{ site.url }}{{site.baseurl }}/assets/images/Renpho.png" alt="Renpho">
+
+<img src="{{ site.url }}{{site.baseurl }}/assets/images/Renpho.jpeg" alt="Renpho">
+
 The beauty of the app is that it not only provides you with trends for each of the measurements (as shown in the FitBit App above), but it also tells you where you numbers compare with healthy age-matched benchmarks. I think this is great - since having a set of standards for comparison is a great way to stay motivated and competitive. All is green, all is well.
 
 ## Lifestyle changes that work.
@@ -27,13 +29,3 @@ An even better approach for your brain health is to pick up an entirely new hobb
 2. Restricting your eating window and eating twice a day is a sustainable approach to weight loss.
 3. Nutrition is 85% of the battle. Question your carbohydrates.
 3. Find an activity
-
-R code block:
-```r
-library(tidyverse)
-df <- read_csv("some_file.csv")
-head(df)
-```
-
-Here's an image:
-<img src="{{ site.url }}{{site.baseurl }}/assets/images/Harden.png" alt="James Harden">
