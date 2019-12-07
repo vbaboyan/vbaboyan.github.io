@@ -28,7 +28,7 @@ library(ggthemes)
 ```
 
 
-By now it is pretty well-established that the Standard American Diet (SAD) is a suboptimal approach to adequate nutrition. One area where this is exceptionally pronounced is in potassium intake. Less than 2% of Americans achieve the recommended daily intake of potassium (4700mg), which is most likely the result of not consuming enough greens. When i've brought these numbers up with friends, a common question is: "How much potassium is there in a banana??" For reference, your typical banana contains about 300mg of Potassium, so unless you're eating around 15 bananas a day, you're probably not aware of how much you really need for your body to function appropriately. In general, the reason I felt compelled to look into this in the first place was because I noticed being more anxious than usual, especially at times when I shouldn't have been. Before heading to a physician, it's important to self-reflect by ruling out obvious (e.g. lack of adequate sleep) and not so obvious (lack of adequate nutrition) culprits in your lifestyle. With respect to the latter, I really wasn't sure. What would a nutritionist say about this? A guiding principle in situations like this is to make sure that the body's hardware is properly maintained before pathologizing it's software. 
+By now it is pretty well-established that the Standard American Diet (SAD) is a suboptimal approach to adequate nutrition. One area where this is exceptionally pronounced is in potassium intake. Less than 2% of Americans achieve the recommended daily intake of potassium (4700mg), which is most likely the result of not consuming enough greens. When i've brought these numbers up with friends, a common question is: "How much potassium is there in a banana??" For reference, your typical banana contains about 300mg of Potassium, so unless you're eating around 15 bananas a day, you're probably not aware of how much you really need for your body to function appropriately. In general, the reason I felt compelled to look into this in the first place was because I noticed being more anxious than usual, especially at times when I shouldn't have been. Before heading to a physician, it's important to self-reflect by ruling out obvious (e.g. lack of adequate sleep) and not so obvious (lack of adequate nutrition) culprits in your lifestyle. With respect to the latter, I really wasn't sure. What would a nutritionist say about this? A guiding principle in situations like this is to make sure that the body's hardware is properly maintained before pathologizing it's software.
 
 ```{r View Data,echo=F}
 #Data Source: https://gist.github.com/syntagmatic/8702807
@@ -57,17 +57,17 @@ A fascinating relationship appears to exist between adrenal function and potassi
 getPalette<-distinctColorPalette(k = 14, altCol = T, runTsne = FALSE)
 par(mfrow=c(1,1))#,pty="s")
 corrplot(cor.mat,
-         method = "color", outline = F, 
-         addgrid.col = "gray", 
+         method = "color", outline = F,
+         addgrid.col = "gray",
          #addgrid.col = NA,
          #addCoef.col = "grey",
          #type="lower",
          order="hclust",
          hclust.method = "ward.D2",
-         addrect = 14, 
-         rect.col = getPalette, 
+         addrect = 14,
+         rect.col = getPalette,
          rect.lwd = 4,
-         cl.pos = "b", 
+         cl.pos = "b",
          tl.col="black", tl.srt=45, tl.cex=.7,cex.main=1,
          #title = "Heatmap of Correlations Between Food Contents",
          mar = c(1,1,1,1)
@@ -157,18 +157,18 @@ wc.plot<-function(dset,cat){
   wc.dset.corpus<-clean_corpus(wc.dset.corpus)
   wc.dset.idf.tdm <-TermDocumentMatrix(wc.dset.corpus, control=list(weighting=weightTfIdf))
   freq <- slam::row_sums(wc.dset.idf.tdm)
-  words <- names(freq) 
+  words <- names(freq)
   wc<-ggwordcloud(words,
-                  scale = c(2.5,0.5), 
+                  scale = c(2.5,0.5),
                   freq,
                   min.freq = 0,
-                  max.words=400, 
-                  random.order=FALSE, 
-                  rot.per=0.1, 
+                  max.words=400,
+                  random.order=FALSE,
+                  rot.per=0.1,
                   #random.color=T
                   colors=brewer.pal(8, "Dark2")
                   )
-  
+
   return(wc)
 }
 
@@ -179,7 +179,7 @@ wc.plots<-grid.arrange(wc1,wc2,wc3,nrow=2,ncol=2,
                        layout_matrix = rbind(c(1,2), c(3,3)))
 ```
 
-The word cloud on the top-left shows the potassium-rich foods found in the Nut and Nut Products while the cloud on the top-right shows those that are found in Fruit and Fruit Juices. The cloud on the bottom shows Vegetable and Vegetable Prodcuts and is a lot larger since most potassium-rich foods tend to fall in this category of foods. These plots aren't perfect - you can easily spot some uninformative adjective words (e.g., "Chinese", "European", "pealed", "dried", etc). Also, the size of the words are not actually weighted by potassium content. Rather, theses are simply words that are most commonly listed in the table of high-potassium foods (e.g. Kale definitely has more potassium than a potato). But you can nonetheless get a good idea of the foods found in each category. What stands out to me most is how the beloved banana is absent in these results, while the plantain is not. This method also confirms what we had expected to be true all along: Avocados are God's gift to humankind.
+The word cloud on the top-left shows the potassium-rich foods found in the Nut and Nut Products while the cloud on the top-right shows those that are found in Fruit and Fruit Juices. The cloud on the bottom shows Vegetable and Vegetable Prodcuts and is a lot larger since most potassium-rich foods tend to fall in this category of foods. These plots aren't perfect - you can easily spot some uninformative adjective words (e.g., "pealed", "dried", etc). Also, the size of the words are not actually weighted by potassium content. Rather, theses are simply words that are most commonly listed in the table of high-potassium foods (e.g. Kale definitely has more potassium than a potato). But you can nonetheless get a good idea of the foods found in each category. What stands out to me most is how the beloved banana is absent in these results, while the plantain is not. This method also confirms what we had expected to be true all along: Avocados are God's gift to humankind.
 
 <h3> Ranking Foods </h3>
 
@@ -242,11 +242,11 @@ plot2<-ggplot(green.pca2,aes(x = Name,y = Comp.1,colour=Group,fill=Group))+
 ggplotly(plot2,tooltip = "text",dynamicTicks = T) %>%
 layout(legend = list(orientation = "h", x = 1, y = 1))
 ```
-The bar plot above shows us all of the foods that are rich in potassium, but ordered according to how much additional nutrients they carry. The bars on the far right are the ones that give you the most bang for your buck, while the ones are the far left are foods that are concentrated with potassium in a one-dimensional manner. Hovering your cursor over each individual bar will give you the food's name along with its nutrient RDI percentage (RDI Magnesium: 420mg, RDI Iron: 8mg, RDI Fiber: 38g). I've included their sugar contents since it's ideal to stay away from foods that are packed with sugar. Fruits are highly nutritious but, unfortunately, are loaded with sugar. Take for example, the purple bar on the far-right: Medjool dates. Although these dates are a great source of the nutrients, they contain 132% of your recommended daily intake for sugar. This is a ridiculous amount and i'd say a food like this is best kept avoided. In contrast, california avocado's (the 4th purple bar from the right) is loaded with great contents and has nearly 0% sugar. Again, avocados - especially from California - are just flat out impressive.
+The bar plot above shows us all of the foods that are rich in potassium, but ordered according to how much additional nutrients they carry. The bars on the far right are the ones that give you the most bang for your buck, while the ones are the far left are foods that are concentrated with potassium in a one-dimensional manner. Hovering your cursor over each individual bar will give you the food's name along with its nutrient RDI percentage (Magnesium (RDI): 420mg, Iron: 8mg, Fiber: 38g). I've included their sugar contents since it's ideal to stay away from foods that are packed with sugar. Fruits are highly nutritious but, unfortunately, are loaded with sugar. Take for example, the purple bar on the far-right: Medjool dates. Although these dates are a great source of the nutrients, they contain 132% of your recommended daily intake for sugar. This is a ridiculous amount and i'd say a food like this is best kept avoided. In contrast, california avocado's (the 4th purple bar from the right) is loaded with great contents and has nearly 0% sugar. Again, avocados - especially from California - are just flat out impressive.
 
 <h3> Recommendations </h3>
 
-One food that isn't represented in this analysis but serves as a fantastic beverage to use in smoothies is coconut water. It typically contains about 500mg of potassium (10% of RDI) per serving (i.e., more than a banana) and tastes delicious. I'd go with any brand that minimizes the added sugars. Personally, I like to blend some coconut water, kale (10%), an avacodo (11%), and a banana (6%) with some ice to make a delicious smoothie to get me going. Optional: add a scoop of a [plant-based coconut-almond protein powder](https://www.iherb.com/pr/vega-one-all-in-one-shake-coconut-almond-1-5-lbs-687-g/81577) (6%) from wholefoods into the mix and the resulting taste is just outstanding. Importantly though, a smoothie like this not only gets you to nearly 50% of the RDI for potassium, but also has so many other nutrients to cover your bases in those areas as well which is great. 
+One food that isn't represented in this analysis but serves as a fantastic beverage to use in smoothies is coconut water. It typically contains about 500mg of potassium (10% of RDI) per serving (i.e., more than a banana) and tastes delicious. I'd go with any brand that minimizes the added sugars. Personally, I like to blend some coconut water, kale (10%), an avacodo (11%), and a banana (6%) with some ice to make a delicious smoothie to get me going. Optional: add a scoop of a [plant-based coconut-almond protein powder](https://www.iherb.com/pr/vega-one-all-in-one-shake-coconut-almond-1-5-lbs-687-g/81577) (6%) from wholefoods into the mix and the resulting taste is just outstanding. Importantly though, a smoothie like this not only gets you to nearly 50% of the RDI for potassium, but also has so many other nutrients to cover your bases in those areas as well which is great.
 
 The rest of your daily needs can easily be satisfied through healthy snacks like chestnuts or brazilnuts, or through a nice side-salad with your meals (e.g.,Kale, Spinach, Taro leaves, Brussel Sprouts).
 
