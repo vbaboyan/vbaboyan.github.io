@@ -17,4 +17,5 @@ header:
 <H1> In Progress (Please Check Back Later.) </H1>
 <ul>
 <li> Handedness, Language, and Schizophrenia: Insights From Cerebral Asymmetries. (Expected: In January) <br>
-<li> Quantified Self: My Solution to Personalized Health & Fitness Tracking  (Expected: In December)
+<li> Quantified Self: My Solution to Personalized Health & Fitness Tracking  (Expected: In December) <br>
+<li> Practical Neuroscience: Understanding your functional networks to optimize mental health (Expected: In December)
