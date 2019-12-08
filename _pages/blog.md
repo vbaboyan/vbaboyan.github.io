@@ -18,4 +18,4 @@ header:
 <ul>
 <li> Handedness, Language, and Schizophrenia: Insights From Cerebral Asymmetries. (Expected: In January) <br>
 <li> Quantified Self: My Solution to Personalized Health & Fitness Tracking  (Expected: In December) <br>
-<li> Practical Neuroscience: Understanding your functional networks to optimize mental health (Expected: In December)
+<li> Practical Neuroscience: How an understanding of functional networks can help in everyday life. (Expected: In December)
