@@ -16,6 +16,7 @@ header:
 <div style="text-align:left">
 <H1> In Progress (Please Check Back Later.) </H1>
 <ul>
-<li> Handedness, Language, and Schizophrenia: Insights From Cerebral Asymmetries. (Expected: In January) <br>
 <li> Quantified Self: My Solution to Personalized Health & Fitness Tracking  (Expected: In December) <br>
-<li> Practical Neuroscience: How an understanding of functional networks can help in everyday life. (Expected: In December)
+<li> B-Vitamins and Fatigue. (Expected: In January) <br>
+<li> Handedness, Language, and Schizophrenia: Insights From Cerebral Asymmetries. (Expected: In January) <br>
+<li> Practical Neuroscience: How an understanding of functional networks can help in everyday life. (Expected: In January)
