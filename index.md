@@ -30,4 +30,9 @@ Thanks for visiting my webpage! I'm currently a doctoral candidate in the Audito
     {% include archive-single.html %}
 {% endfor %}
 
+
+<H1> In Progress (Please Check Back Later.) </H1>
+<ul>
+<li> Quantified Self: My Solution to Personalized Health & Fitness Tracking  (Expected: In December) <br>
+<li> B-Vitamins and Fatigue. (Expected: In January) <br>
 </div>
