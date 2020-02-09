@@ -2,7 +2,7 @@
 #title: "Splash Page"
 layout: splash
 feature_row:
-  - image_path: assets/images/Main_Diagram.png
+  - image_path: assets/images/Main_Diagram2.png
     alt: "Baboyan Connectomics"
     image_caption: "The Structural Connectome of the Human Frontal Lobe. <br> (Data Courtesy of the [Aphasia Lab, @ USC](https://web.asph.sc.edu/aphasia/))"
     title: "Welcome • Բարի Գալուստ • أهلا وسهلا"
