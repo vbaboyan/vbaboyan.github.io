@@ -7,6 +7,8 @@ feature_row:
     image_caption: "Connectomics of the Human Brain. <br> (Data Courtesy of the [Aphasia Lab, @ USC](https://web.asph.sc.edu/aphasia/))"
     title: "Welcome • Բարի Գալուստ • أهلا وسهلا"
     #excerpt: "Welcome To My Personal Webpage!"
+header:
+  teaser: "assets/images/teaser.png"
 ---
 {% include feature_row id="feature_row" type="center" %}
 
