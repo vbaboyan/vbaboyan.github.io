@@ -4,7 +4,7 @@ layout: splash
 feature_row:
   - image_path: assets/images/Main_Diagram2.png
     alt: "Baboyan Connectomics"
-    image_caption: "Human Connectomics. <br> (Data Courtesy of the [Aphasia Lab, @ USC](https://web.asph.sc.edu/aphasia/))"
+    image_caption: "Connectomics of the Human Brain. <br> (Data Courtesy of the [Aphasia Lab, @ USC](https://web.asph.sc.edu/aphasia/))"
     title: "Welcome • Բարի Գալուստ • أهلا وسهلا"
     #excerpt: "Welcome To My Personal Webpage!"
 ---
