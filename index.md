@@ -3,12 +3,10 @@
 layout: splash
 feature_row:
   - image_path: assets/images/Main_Diagram2.png
-    thumb: assets/images/Teaser_Thumb.png #keep it square 200x200 px is good
     alt: "Baboyan Connectomics"
-    image_caption: "Connectomics of the Human Brain. <br> (Data Courtesy of the [Aphasia Lab, @ USC](https://web.asph.sc.edu/aphasia/))"
+    image_caption: "Structural Connectomics of the Human Brain. <br> (Data Courtesy of the [Aphasia Lab, @ USC](https://web.asph.sc.edu/aphasia/))"
     title: "Welcome • Բարի Գալուստ • أهلا وسهلا"
     #excerpt: "Welcome To My Personal Webpage!"
-
 ---
 {% include feature_row id="feature_row" type="center" %}
 
